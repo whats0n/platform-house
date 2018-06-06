@@ -1,0 +1,130 @@
+<!-- begin floors -->
+<div class="floors js-floors">
+	<div class="inner floors__inner">
+		<div class="floors__col floors__figure">
+			<div class="figure js-floors-figures">
+				{% for item in [
+					{
+						classList: 'first',
+						color: 'red',
+						shapes: [
+							'figure__shape_first',
+							'figure__shape_second',
+							'figure__shape_third',
+							'figure__shape_fourth',
+							'figure__shape_fifth',
+							'figure__shape_sixth'
+						]
+					},
+					{
+						classList: 'second',
+						color: 'blue',
+						shadow: [
+							'figure__item-shadow-in_first',
+							'figure__item-shadow-in_second'
+						],
+						shapes: [
+							'figure__shape_first',
+							'figure__shape_second',
+							'figure__shape_third',
+							'figure__shape_fourth',
+							'figure__shape_fifth',
+							'figure__shape_sixth',
+							'figure__shape_seventh',
+							'figure__shape_eighth'
+						]
+					},
+					{
+						classList: 'third',
+						color: 'yellow',
+						shadow: [
+							'figure__item-shadow-in_first',
+							'figure__item-shadow-in_second'
+						],
+						shapes: [
+							'figure__shape_first',
+							'figure__shape_second',
+							'figure__shape_third',
+							'figure__shape_fourth',
+							'figure__shape_fifth',
+							'figure__shape_sixth'
+						]
+					}
+				] %}
+					<div class="figure__container figure__container_{{item.classList}} js-floors-figure-container" data-figure="figure-{{loop.index}}">
+						<div class="figure__item figure__item_{{item.classList}} js-floors-figure" data-figure="figure-{{loop.index}}">
+							<div class="figure__item-in figure__item-in_first figure__item-in_{{item.color}} figure__item-in_top"></div>
+							<div class="figure__item-in figure__item-in_second figure__item-in_{{item.color}} figure__item-in_bottom"></div>
+							{% if item.shadow %}
+								<div class="figure__item-shadow">
+									{% for item in item.shadow %}
+									    <div class="figure__item-shadow-in {{item}}"></div>
+									{% endfor %}
+								</div>
+							{% endif %}
+							<div class="figure__shapes">
+								{% for item in item.shapes %}
+									<div class="figure__shape {{item}}"></div>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="floors__col">
+			<div class="floors__container">
+				{% for item in [
+					{
+						icon: 'freelancers',
+						color: 'red',
+						number: '3',
+						title: 'Scaleups',
+						label: '3. poschodie',
+						description: 'Tretie poschodie je určené pre rýchlo-rastúcu a etablovanú spoločnosť PLATFORM. PLATFORM plánuje zdieľať s&nbsp;ostatnými členmi svoje skúsenosti ako jeden z benefitov PLATFORM House.'
+					},
+					{
+						icon: 'startups',
+						color: 'blue',
+						number: '2',
+						title: 'Startups',
+						label: '2. poschodie',
+						description: 'Druhé poschodie je určené pre malé a&nbsp;začínajúce spoločnosti, ktoré rozumejú výhodam zdieľaných priestorov a chcú  ich využívať naplno.',
+						btnLink: 'Zobraziť pôdorys'
+					},
+					{
+						icon: 'scaleups',
+						color: 'yellow',
+						number: '1',
+						title: 'Freelancers',
+						label: '1. poschodie',
+						description: 'Prvé poschodie je určené pre podnikateľov a&nbsp;kreatívcov - jednotlivcov, ktorí chcú naplno využívať moderné kancelárie, networkovať a&nbsp;zdieľať skúsenosti s rovnako rozmýšľajúcimi členmi.',
+						btnLink: 'Zobraziť pôdorys'
+					}
+				] %}
+					<div class="floors__item floors__item_{{item.color}} js-floors-item">
+						<div class="floors__number">{{item.number}}</div>
+						<div class="floors__content">
+							<img src="img/{{item.icon}}.svg" alt="{{item.icon}}" class="floors__icon">
+							<div class="floors__header js-floors-control" data-target="figure-{{loop.index}}">
+								<div class="floors__arrow"></div>
+								<h2 class="title-md floors__title">{{item.title}}</h2>
+								<div class="floors__label">{{item.label}}</div>
+							</div>
+							<div class="floors__body js-floors-container">
+								<div class="floors__description text-lg">{{item.description | safe}}</div>
+								{% if item.btnLink %}
+									<a href="#" class="btn-link floors__btn-link">
+										{{mixins.icon('arrow-right', 'btn-link__icon btn-link__arrow-right')}}
+										<span class="btn-link__title">{{item.btnLink}}</span>
+									</a>
+								{% endif %}
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end floors -->

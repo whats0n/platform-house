@@ -1,0 +1,33 @@
+.item
+	padding: 60px 60px 40px
+	background: $white
+	box-shadow: 0 8px 16px 0 rgba($black,.05)
+	+lg 
+		padding: 40px
+	+xs 
+		padding: 45px 35px 45px
+	&__figure
+		margin-bottom: 40px
+		height: 40px
+		+vertical
+		text-align: left
+		+xs
+			margin-bottom: 20px
+	&__icon 
+		display: inline-block
+		vertical-align: middle
+		width: 80px
+	&__title
+		margin-bottom: 15px
+		+xs 
+			margin-bottom: 5px
+	&__description
+		overflow: hidden
+		margin-bottom: 50px
+		max-width: 200px
+		height: 3em * 1.445
+		opacity: 0.5
+		line-height: 1.445
+		+xs 
+			margin-bottom: 40px
+			height: auto

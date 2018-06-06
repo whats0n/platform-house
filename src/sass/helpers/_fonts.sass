@@ -1,0 +1,72 @@
+//FONTS
+=fontpath($name, $name1, $file)
+	src: local($name), local($name1), url("../fonts/" + $file + ".woff2") format("woff2"), url("../fonts/" + $file + ".woff") format("woff")
+=fontdefault($style, $weight, $name)
+	font-family: $name
+	font-style: $style
+	font-weight: $weight
+
+$familyPrimary: 'Proxima Nova'
+$familySecondary: 'Sofia Pro'
+
+@font-face
+	+fontdefault(normal, 300, $familyPrimary)
+	+fontpath($familyPrimary + ' Light', $familyPrimary + '-Light', proximanova-light)
+
+@font-face
+	+fontdefault(italic, 300, $familyPrimary)
+	+fontpath($familyPrimary + ' Light Italic', $familyPrimary + '-LightItalic', proximanova-lightitalic)
+
+@font-face
+	+fontdefault(normal, 400, $familyPrimary)
+	+fontpath($familyPrimary + ' Regular', $familyPrimary + '-Regular', proximanova-regular)
+
+@font-face
+	+fontdefault(italic, 400, $familyPrimary)
+	+fontpath($familyPrimary + ' Italic', $familyPrimary + '-Italic', proximanova-regularitalic)
+
+@font-face
+	+fontdefault(normal, 600, $familyPrimary)
+	+fontpath($familyPrimary + ' SemiBold', $familyPrimary + '-SemiBold', proximanova-semibold)
+
+@font-face
+	+fontdefault(italic, 600, $familyPrimary)
+	+fontpath($familyPrimary + ' SemiBold Italic', $familyPrimary + '-SemiBoldItalic', proximanova-semibolditalic)
+
+@font-face
+	+fontdefault(normal, 700, $familyPrimary)
+	+fontpath($familyPrimary + ' Bold', $familyPrimary + '-Bold', proximanova-bold)
+
+@font-face
+	+fontdefault(italic, 700, $familyPrimary)
+	+fontpath($familyPrimary + ' Bold Italic', $familyPrimary + '-BoldItalic', proximanova-bolditalic)
+
+@font-face
+	+fontdefault(normal, 800, $familyPrimary)
+	+fontpath($familyPrimary + ' ExtraBold', $familyPrimary + '-ExtraBold', proximanova-extrabold)
+@font-face
+	+fontdefault(italic, 800, $familyPrimary)
+	+fontpath($familyPrimary + ' ExtraBold Italic', $familyPrimary + '-ExtraBoldItalic', proximanova-extrabolditalic)
+
+@font-face
+	+fontdefault(normal, 900, $familyPrimary)
+	+fontpath($familyPrimary + ' ExtraBold', $familyPrimary + '-ExtraBold', proximanova-black)
+@font-face
+	+fontdefault(italic, 900, $familyPrimary)
+	+fontpath($familyPrimary + ' ExtraBold Italic', $familyPrimary + '-ExtraBoldItalic', proximanova-blackitalic)
+
+@font-face
+	+fontdefault(normal, 400, $familySecondary)
+	+fontpath($familySecondary + ' Regular', $familySecondary + '-Regular', sofia_pro_regular)
+
+@font-face
+	+fontdefault(normal, 500, $familySecondary)
+	+fontpath($familySecondary + ' Medium', $familySecondary + '-Medium', sofia_pro_medium)
+
+@font-face
+	+fontdefault(normal, 700, $familySecondary)
+	+fontpath($familySecondary + ' Bold', $familySecondary + '-Bold', sofia_pro_bold)
+
+@font-face
+	+fontdefault(normal, 900, $familySecondary)
+	+fontpath($familySecondary + ' Black', $familySecondary + '-Black', sofia_pro_black)

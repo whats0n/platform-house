@@ -1,0 +1,108 @@
+.floors
+	margin: -476px 0 66px
+	+md 
+		padding: 50px 0 40px
+		margin: 0
+	&__inner
+		padding: 0 90px
+		+clr
+		+md 
+			padding: 0
+	&__col
+		float: left
+		width: 50%
+		min-height: 1px
+		+md 
+			width: 100%
+	&__figure
+		padding-left: 50px
+		+md
+			display: none
+	&__container
+		border-top: 1px solid #F0F0F1
+		+md 
+			border-top: none
+	&__item
+		position: relative
+		overflow: hidden
+		padding-top: 29px
+		padding-left: 145px
+		padding-bottom: 29px
+		border-bottom: 1px solid #F0F0F1
+		+md 
+			padding: 20px 35px
+		&_blue.is-active
+			.floors__number
+				color: #54B6ED
+		&_red.is-active
+			.floors__number
+				color: #FF4867
+		&_yellow.is-active
+			.floors__number
+				color: #FFD527
+		&.is-active
+			.floors
+				&__number
+					opacity: 1
+				&__arrow
+					&:before,
+					&:after
+						transform: rotate(0) scaleX(0.8) translateY(3px)
+	&__number
+		position: absolute
+		top: -10px
+		left: 1px
+		opacity: 0.03
+		font-family: $familySecondary
+		+f(160px, 900, 192px)
+		transition: color 0.25s, opacity 0.25s
+		+md 
+			display: none
+	&__header
+		position: relative
+		cursor: pointer
+	&__label
+		margin-top: -1px
+		opacity: 0.3
+		font-family: $familySecondary
+		+f(14px, null, 18px)
+		letter-spacing: 1.17px
+	&__body
+		display: none
+		padding: 30px 0 10px
+		+md 
+			padding: 20px 0
+	&__btn-link
+		margin-top: 20px
+		height: 18px
+	&__arrow
+		position: absolute
+		top: 27px
+		right: 2px
+		width: 12px
+		height: 12px
+		+md 
+			top: 14px
+		&:before,
+		&:after
+			content: ''
+			position: absolute
+			top: 50%
+			margin-top: -1px
+			border-top: 3px	solid $dark
+			width: 90%
+			transition: transform 0.4s
+		&:before
+			left: -2px
+			transform: rotate(45deg)
+			transform-origin: left bottom
+		&:after
+			right: -2px
+			transform: rotate(-45deg)
+			transform-origin: right bottom
+	&__icon 
+		display: none
+		margin-bottom: 15px
+		width: 50px
+		+md 
+			display: block

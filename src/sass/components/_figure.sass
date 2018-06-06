@@ -1,0 +1,551 @@
+$secondaryRed: #FF4867
+$secondaryBlue: #54B6ED
+$secondaryYellow: #FFD527
+
+$half: 50%
+$two-thirds: 66.66%
+$one-thirds: 33.33%
+
+$duration: 0.5s
+$easing: ease
+$backgroundDuration: 0.25s
+$backgroundEasing: ease
+
+.figure
+	margin: 0 auto
+	position: relative
+	width: 300px
+	height: 400px
+	transform:  translateY(5px)
+	+r(1200) 
+		margin: 0
+	&.is-active
+		animation: scale $duration ease-in-out forwards
+		.figure__item_first
+			transform: rotateZ(-60deg) rotateX(31deg) rotateY(48deg) scale(1.18,1.07)
+			.figure
+				&__item-in
+					&_second
+						&:before
+							transform: scale(.88)
+				&__shape
+					&_first
+						top: 15px
+						right: 15px
+						transform: scaleX(1) 
+					&_second
+						top: 15px
+						right: 15px
+						transform: scaleY(1) 
+					&_third,
+					&_fifth
+						transform: scaleX(1) skewY(-45deg)
+					&_fourth,
+					&_sixth
+						transform: scaleY(1) skewX(-45deg)
+		.figure__item_second
+			transform: rotateZ(-60deg) rotateX(31deg) rotateY(48deg) scale(1.18,1.07) translate3d(-2px,0,24px)
+			.figure
+				&__item-shadow
+					top: 15px
+					bottom: 15px
+					&-in
+						width: 15px
+						&_first
+							&:before
+								top: -6px
+						&_second
+							&:before
+								bottom: -6px
+
+				&__shape
+					&_first,
+					&_eighth:before
+						right: 15px
+						transform: scaleX(1) 
+					&_first:before
+						top: 15px
+					&_eighth:before
+						bottom: -25px
+					&_second,
+					&_seventh:before
+						top: 15px
+						transform: scaleY(1) 
+					&_seventh:before
+						left: -25px
+						right: 15px
+					&_third,
+					&_fifth
+						transform: scaleX(1) skewY(-45deg)
+					&_fourth,
+					&_sixth
+						transform: scaleY(1) skewX(-45deg)
+		.figure__item_third
+			transform: rotateZ(-60deg) rotateX(31deg) rotateY(48deg) scale(1.18,1.07) translate3d(-4px,0,50px)
+			.figure
+				&__item-shadow
+					top: 15px
+					bottom: 15px
+					&-in
+						width: 15px
+						&_second:before 
+							bottom: -15px
+				&__shape
+					&_first
+						top: 15px
+						&:before
+							right: 15px
+							bottom: -11px
+							transform: scaleX(1) 
+					&_second
+						top: 15px
+						&:before
+							left: 15px
+							right: 15px
+							transform: scaleY(1) 
+					&_third
+						transform: scaleX(1) skewY(-45deg)
+					&_fourth
+						transform: scaleY(1) skewX(-45deg)
+					&_sixth
+						&:before
+							top: 15px
+							left: -25px
+							right: 15px
+							transform: scaleY(1)
+					&_fifth
+						right: 15px
+						&:before
+							top: 15px
+							bottom: 15px
+							transform: scaleX(1)
+	&[data-active*="figure-2"]
+		.figure__container
+			&_first
+				margin-top: -40px
+	&[data-active*="figure-3"]
+		.figure__container
+			&_third
+				margin-bottom: -40px
+	&__container
+		position: absolute
+		left: 0
+		height: $half
+		width: 100%
+		opacity: 0
+		transform: translate3d(0,-70%,0)
+		transition: margin 0.3s
+		&_first
+			top: 0
+			z-index: 3
+		&_second
+			top: 25%
+			z-index: 2
+		&_third
+			bottom: 0
+			z-index: 1
+	&__item
+		width: 100%
+		height: 100%
+		transition: transform $duration $easing
+		transform-origin: center center
+		&_first
+			&.is-disabled
+				.figure
+					&__item-in_second
+						&:before
+							background: #F0F0F0
+					&__item-in
+						background: #F0F0F0
+					&__shape
+						background: #E9E9E9
+			.figure
+				&__item-in
+					background: $secondaryRed
+					&_first
+						width: 100%
+					&_second
+						width: $one-thirds
+						z-index: 5
+						&:before
+							content: ""
+							position: absolute
+							left: 10%
+							right: 10%
+							bottom: 10%
+							top: 0
+							background: rgb(244, 57, 89)
+							transition: background $backgroundDuration $backgroundEasing, transform $duration $easing
+					&_top
+						top: 0
+						left: 0
+					&_bottom
+						bottom: 0
+						right: 0
+				&__shape
+					z-index: 7
+					background: rgb(227, 53, 82)
+					transform-origin: right top
+					transition: opacity $duration $easing, transform $duration $easing, top $duration $easing, right $duration $easing, background $backgroundDuration $backgroundEasing
+					&_first
+						top: 10px
+						right: 10px
+						bottom: 15px
+						width: 11px
+						transform: scaleX(0)
+					&_second
+						top: 10px
+						left: 15px
+						right: 10px
+						height: 11px
+						transform: scaleY(0)
+					&_third,
+					&_fifth
+						transform: scaleX(0) skewY(0)
+					&_third
+						top: 0
+						right: 100%
+						width: 11px
+						height: $half
+					&_fourth,
+					&_sixth
+						transform: scaleY(0) skewX(0)
+					&_fourth
+						top: 50%
+						left: 0
+						right: $one-thirds
+						height: 11px
+					&_fifth
+						top: 50%
+						right: $one-thirds
+						bottom: 0
+						width: 11px
+					&_sixth
+						top: 100%
+						left: $two-thirds
+						right: 0
+						height: 11px
+		&_second
+			top: 25%
+			z-index: 2
+			&.is-disabled
+				.figure
+					&__item-shadow
+						background: #F0F0F0
+						&-in:before
+							background: #F0F0F0
+					&__item-in
+						background: #F0F0F0
+					&__shape,
+					&__shape:before
+						background: #E9E9E9
+			.figure
+				&__item-in
+					background: $secondaryBlue
+					&_first
+						width: $two-thirds
+					&_second
+						z-index: 5
+						width: $two-thirds
+					&_top
+						top: 0
+						left: 0
+					&_bottom
+						bottom: 0
+						right: 0
+				&__item-shadow
+					position: absolute
+					z-index: 6
+					left: $one-thirds
+					top: 5%
+					bottom: 5%
+					width: $one-thirds
+					background: rgb(73, 163, 239)
+					transition: top $duration $easing, bottom $duration $easing, background $backgroundDuration $backgroundEasing
+					&-in
+						content: ""
+						position: absolute
+						width: 10px
+						height: 55%
+						transition: width $duration $easing, height $duration $easing, background $backgroundDuration $backgroundEasing
+						&:before
+							content: ''
+							position: absolute
+							top: 0
+							bottom: 0
+							width: 100%
+							background: $secondaryBlue
+							transition: top $duration $easing, bottom $duration $easing, background $backgroundDuration $backgroundEasing
+					&-in_first
+						left: 0
+						bottom: 0
+					&-in_second
+						right: 0
+						top: 0
+				&__shape
+					z-index: 7
+					background: #4495DD
+					transform-origin: right top
+					transition: opacity $duration $easing, transform $duration $easing, top $duration $easing, right $duration $easing, background $backgroundDuration $backgroundEasing
+					&_first
+						bottom: 0
+						right: 10px
+						width: 11px
+						height: $half
+						background: none !important
+						transform: scaleX(0)
+						transform-origin: right center
+						&:before 
+							content: ''
+							position: absolute
+							top: 10px
+							left: 0
+							right: 0
+							bottom: 15px
+							background: #4495DD
+							transition: top $duration $easing, background $backgroundDuration $backgroundEasing
+					&_second
+						top: 10px
+						left: 0
+						right: 0
+						width: $two-thirds
+						height: 11px
+						background: none !important
+						transform: scaleY(0)
+						transform-origin: center top
+						&:before 
+							content: ''
+							position: absolute
+							top: 0
+							left: 15px
+							right: 15px
+							bottom: 0
+							background: #4495DD
+							transition: background $backgroundDuration $backgroundEasing
+					&_third,
+					&_fifth
+						transform: scaleX(0) skewY(0)
+					&_third
+						top: 0
+						right: 100%
+						bottom: 50%
+						width: 11px
+					&_fourth,
+					&_sixth
+						transform: scaleY(0) skewX(0)
+					&_fourth
+						top: 50%
+						left: 0
+						width: $one-thirds
+						height: 11px
+					&_fifth
+						top: 50%
+						right: $two-thirds
+						bottom: 0
+						width: 11px
+					&_sixth
+						top: 100%
+						right: 0
+						width: $two-thirds
+						height: 11px
+					&_seventh
+						z-index: 1
+						top: $half
+						right: 0
+						width: $one-thirds
+						height: 11px
+						background: none !important
+						&:before 
+							content: ''
+							position: absolute
+							top: 10px
+							left: -10px
+							right: 10px
+							height: 100%
+							background: #4495DD
+							transform: scaleY(0)
+							transform-origin: center top
+							transition: transform $duration $easing, top $duration $easing, left $duration $easing, right $duration $easing, background $backgroundDuration $backgroundEasing
+					&_eighth
+						z-index: 1
+						top: 0
+						right: $one-thirds
+						width: 11px
+						height: $half
+						background: none !important
+						&:before 
+							content: ''
+							position: absolute
+							top: 15px
+							right: 10px
+							bottom: -10px
+							width: 100%
+							background: #4495DD
+							transform: scaleX(0)
+							transform-origin: right center
+							transition: transform $duration $easing, right $duration $easing, bottom $duration $easing, background $backgroundDuration $backgroundEasing
+		&_third
+			bottom: 0
+			z-index: 1
+			&.is-disabled
+				.figure
+					&__item-shadow
+						background: #F0F0F0
+						&-in:before
+							background: #F0F0F0
+					&__item-in
+						background: #F0F0F0
+					&__shape,
+					&__shape:before
+						background: #E9E9E9
+			.figure
+				&__item-in
+					background: $secondaryYellow
+					&_first
+						width: $one-thirds
+					&_second
+						width: 100%
+					&_top
+						top: 0
+						left: 0
+					&_bottom
+						bottom: 0
+						right: 0
+				&__item-shadow
+					position: absolute
+					left: 0
+					top: 10px
+					bottom: 10px
+					width: $one-thirds
+					background: rgb(252, 195, 11)
+					transition: top $duration $easing, bottom $duration $easing, background $backgroundDuration $backgroundEasing
+					&-in
+						content: ""
+						position: absolute
+						width: 10px
+						transition: width $duration $easing, height $duration $easing, background $backgroundDuration $backgroundEasing
+						&:before
+							content: ''
+							position: absolute
+							top: 0
+							bottom: 0
+							width: 100%
+							background: $secondaryYellow
+							transition: top $duration $easing, bottom $duration $easing, background $backgroundDuration $backgroundEasing
+					&-in_first
+						left: 0
+						bottom: 0
+						height: 100%
+					&-in_second
+						top: 0
+						right: 0
+						height: 50%
+						&:before
+							bottom: -10px
+				&__shape
+					z-index: 7
+					background: #F1B20F
+					transform-origin: right top
+					transition: transform $duration $easing, top $duration $easing, right $duration $easing, background $backgroundDuration $backgroundEasing
+					&_first
+						top: 10px
+						right: $two-thirds
+						width: 11px
+						height: $half
+						background: none !important
+						&:before
+							content: ''
+							position: absolute
+							top: 0
+							right: 10px
+							bottom: 0
+							width: 100%
+							background: #F1B20F
+							transform: scaleX(0)
+							transform-origin: right top
+							transition: transform $duration $easing, bottom $duration $easing, right $duration $easing, background $backgroundDuration $backgroundEasing
+					&_second
+						top: 10px
+						left: 0
+						width: $one-thirds
+						height: 11px
+						background: none !important
+						&:before
+							content: ''
+							position: absolute
+							top: 0
+							left: 10px
+							right: 10px
+							bottom: 0
+							background: #F1B20F
+							transform: scaleY(0)
+							transform-origin: right top
+							transition: transform $duration $easing, top $duration $easing, left $duration $easing, right $duration $easing, background $backgroundDuration $backgroundEasing
+					&_third
+						top: 0
+						right: 100%
+						width: 11px
+						height: 100%
+						transform: scaleX(0) skewY(0)
+					&_fourth
+						transform: scaleY(0) skewX(0)
+					&_fourth
+						top: 100%
+						left: 0
+						width: 100%
+						height: 11px
+					&_fifth
+						top: 50%
+						right: 10px
+						bottom: 0
+						width: 11px
+						background: none !important
+						&:before
+							content: ''
+							position: absolute
+							top: 10px
+							right: 0
+							bottom: 10px
+							width: 100%
+							background: #F1B20F
+							transform: scaleX(0)
+							transform-origin: right top
+							transition: transform $duration $easing, top $duration $easing, bottom $duration $easing, background $backgroundDuration $backgroundEasing
+					&_sixth
+						top: $half
+						left: $one-thirds
+						right: 0
+						height: 11px
+						background: none !important
+						&:before
+							content: ''
+							position: absolute
+							top: 10px
+							left: -10px
+							right: 10px
+							height: 100%
+							background: #F1B20F
+							transform: scaleY(0)
+							transform-origin: right top
+							transition: transform $duration $easing, left $duration $easing, right $duration $easing, top $duration $easing, background $backgroundDuration $backgroundEasing
+	&__item-in
+		position: absolute
+		height: $half
+		transition: background $backgroundDuration $backgroundEasing
+	&__shape
+		position: absolute
+	&__shapes
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 10
+
+@keyframes scale 
+	0%
+		transform: scale(1) translateY(5px)
+	50%
+		transform: scale(0.98)
+	100%
+		transform: scale(1) translateY(20px)

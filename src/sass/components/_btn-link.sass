@@ -1,0 +1,46 @@
+.btn-link
+	position: relative
+	display: inline-block
+	vertical-align: top
+	padding: 0
+	height: 50px
+	color: $dark
+	background: none
+	+vertical 
+	+hover
+		.btn-link__title:before
+			opacity: 1
+	&_lg 
+		height: 60px
+		.btn-link__title
+			+sm 
+				+f(18px, null, 23px)
+	&__icon,
+	&__title
+		position: relative
+		z-index: 1
+		display: inline-block
+		vertical-align: middle
+	&__icon
+		margin-right: 15px
+	&__arrow-right
+		font-size: 14px
+	&__user
+		font-size: 16px
+	&__title
+		position: relative
+		font-family: $familySecondary
+		+f(14px, 700, 18px)
+		text-transform: uppercase
+		+sm
+			+f(16px, 500, 19px)
+			text-transform: none
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			right: 0
+			bottom: -2px
+			border-bottom: 1px solid $dark
+			opacity: 0
+			transition: opacity 0.3s

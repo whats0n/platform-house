@@ -1,0 +1,85 @@
+.testimonials
+	position: relative
+	z-index: 10
+	margin-bottom: -480px
+	+md 
+		margin-bottom: 0
+	&__container
+		position: relative
+		z-index: 2
+		float: right
+		padding: 240px 180px 180px
+		width: 66.66%
+		background: $white
+		box-shadow: 0 8px 16px 0 rgba($black,.05)
+		+lg 
+			padding: 180px 90px
+		+md 
+			padding: 80px 35px 80px
+			width: 100%
+	&__figure
+		padding-top: 120px
+		width: 69.44%
+		+md 
+			display: none
+		&-in
+			position: relative
+			padding-top: 100%
+			background: #292D37
+	&__label
+		position: absolute
+		top: 245px
+		left: 96px
+		+lg
+			left: 45px
+		+md 
+			position: relative
+			top: auto
+			left: auto
+	&__slider
+		margin-bottom: 153px
+		+md 
+			margin-bottom: 72px
+	&__text
+		margin-bottom: 30px
+		font-family: $familySecondary
+		+f(28px, 400, 1.5)
+		+md 
+			+f(24px, null, 1.458)
+	&__logos
+		padding: 0 35px
+		margin: 0 -35px
+		+md
+			overflow: auto
+			white-space: nowrap
+	&__logo
+		display: inline-block
+		vertical-align: top
+		padding-top: 10px
+		height: 57px
+		opacity: 0.2
+		+vertical 
+		will-change: opacity
+		transition: opacity 0.3s
+		&:not(:last-child)
+			margin-right: 100px
+			+md 
+				margin-right: 30px
+		&.is-active
+			opacity: 1
+		+hover
+			opacity: 0.7
+	&__logo-in
+		display: inline-block
+		vertical-align: top
+	&__picture
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		opacity: 0
+		+cover
+		transition: opacity 0.3s
+		&.is-active
+			opacity: 1

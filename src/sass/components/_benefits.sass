@@ -1,0 +1,230 @@
+.benefits
+	padding: 180px 0
+	+md 
+		padding: 40px 0 60px
+	&__inner
+		padding: 0 180px
+		+lg 
+			padding: 0 90px
+		+md
+			padding: 0 25px
+	&__title
+		margin-bottom: 20px
+		max-width: 377px
+		+md 
+			max-width: 700px
+		+sm 
+			max-width: 259px
+	&__label
+		position: absolute
+		top: 6px
+		left: 90px
+		+lg
+			left: 45px
+		+md 
+			position: relative
+			top: auto
+			left: auto
+	&__item
+		display: flex
+		align-items: center
+		padding: 60px 0
+		+sm 
+			display: block
+			padding: 20px 0
+		&_odd
+			.benefits__img
+				width: 63.426%
+				text-align: right
+			.benefits__list
+				width: 36.574%
+		&_even
+			.benefits__img
+				width: 36.574%
+				text-align: left
+			.benefits__img-in
+				padding-top: 126.59%
+				+sm 
+					padding-top: 72.993%
+				+xs 
+					padding-top: 126.59%
+			.benefits__list
+				order: 1
+				padding-left: 145px
+				width: 63.426%
+				+lg 
+					padding-left: 40px
+				+sm 
+					padding-left: 0
+		&_sm
+			+sm 
+				padding-bottom: 90px
+			.benefits__figure
+				left: 0
+				bottom: 0
+				width: 1em
+				height: 1em
+				font-size: 300px
+				transform: translate3d(-44.66%, 50%, 0)
+				+lg 
+					font-size: 21vw
+				+sm
+					font-size: 140px
+					transform: translate3d(35px, 50%, 0)
+				.benefits__figure-container:before,
+				.benefits__figure-container:after,
+				.benefits__figure-in:before,
+				.benefits__figure-in:after
+					top: 50%
+					left: 50%
+					transform: translate3d(-50%,-50%,0)
+				.benefits__figure-in:before,
+				.benefits__figure-container:before
+					width: 100%
+					height: 33.34%
+				.benefits__figure-in:after,
+				.benefits__figure-container:after
+					width: 33.34%
+					height: 100%
+		&_md
+			.benefits__img-in
+				width: 78.834%
+				+md 
+					width: auto
+			.benefits__figure
+				left: 0
+				bottom: 0
+				width: 1.5em
+				height: 1em
+				font-size: 200px
+				transform: translate3d(-48.33%, 25%, 0)
+				+lg
+					font-size: 14vw
+				+sm
+					left: auto
+					right: 0
+					font-size: 94px
+					transform: translate3d(-35px, 50%, 0)
+				.benefits__figure-in:before,
+				.benefits__figure-container:before
+					top: 0
+					left: 0
+					width: 66.34%
+					height: 50%
+				.benefits__figure-in:after,
+				.benefits__figure-container:after
+					right: 0
+					bottom: 0
+					width: 66.34%
+					height: 50%
+		&_lg
+			+md 
+				padding-bottom: 44px
+			.benefits__figure
+				top: 0
+				right: 0
+				width: 1.5em
+				height: 1em
+				font-size: 200px
+				transform: translate3d(30%,-70%,0)
+				+lg 
+					font-size: 14vw
+				+sm
+					top: auto
+					bottom: 0
+					font-size: 94px
+					transform: translate3d(-35px,25%,0)
+				.benefits__figure-container:before,
+				.benefits__figure-container:after,
+				.benefits__figure-in:before,
+				.benefits__figure-in:after
+					left: 0
+				.benefits__figure-in:before,
+				.benefits__figure-container:before
+					top: 0
+					width: 33.34%
+					height: 51%
+				.benefits__figure-in:after,
+				.benefits__figure-container:after
+					bottom: 0
+					width: 100%
+					height: 50%
+	&__figure
+		position: absolute
+		z-index: 1
+		.benefits__figure-container:before,
+		.benefits__figure-container:after,
+		.benefits__figure-in:before,
+		.benefits__figure-in:after
+			content: ''
+			position: absolute
+		.benefits__figure-container:before,
+		.benefits__figure-container:after
+			z-index: 1
+			box-shadow: 0 8px 16px 0 rgba($black,0.05)
+		.benefits__figure-in:before,
+		.benefits__figure-in:after
+			z-index: 2
+			background: $white
+	&__figure-container,
+	&__figure-in 
+		width: 100%
+		height: 100%
+	&__figure-container
+		+sm 
+			transform: translate3d(0,0,0) !important
+	&__img
+		font-size: 0
+		+sm
+			margin: 0 -25px
+		&-in
+			position: relative
+			display: inline-block
+			vertical-align: top
+			padding-top: 72.993%
+			width: 100%
+			background: #D8D8D8
+			box-shadow: 0 8px 16px 0 rgba($black,0.05)
+			+md 
+				display: block
+	&__picture
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-size: cover
+		background-position: center top
+	&__list
+		position: relative
+		z-index: 2
+		color: rgba(#292D37, .8)
+		+md 
+			padding-bottom: 30px
+		li 
+			position: relative
+			padding: 22px 0 21px 25px
+			+md 
+				padding: 12px 0 11px 25px
+			&:before,
+			&:after
+				content: ''
+				position: absolute
+			&:before
+				top: 30px
+				left: 5px
+				border-left: 2px solid #292D37
+				height: 10px
+				+md 
+					top: 20px
+			&:after
+				top: 34px
+				left: 1px
+				border-top: 2px solid #292D37
+				width: 10px
+				+md 
+					top: 24px
+	.benefits__img,
+	.benefits__list
+		+sm 
+			width: auto

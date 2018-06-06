@@ -1,0 +1,182 @@
+.footer
+	padding-bottom: 100px
+	color: $white
+	background: $dark
+	+sm 
+		padding-bottom: 20px
+	&__inner
+		padding: 0 35px
+		margin: 0 auto
+		max-width: 1310px
+		+clr
+	&__top
+		padding: 680px 0 162px
+		text-align: center
+		+md 
+			padding: 100px 0
+		+sm 
+			text-align: left
+	&__title
+		margin-bottom: 40px
+		+sm 
+			max-width: 280px
+	&__label
+		margin-top: 10px
+		opacity: 0.4
+		font-family: $familySecondary
+		+f(15px, 400, 18px)
+		letter-spacing: 0.25px
+		+sm 
+			margin-top: 20px
+			opacity: 1
+	&__btn
+		padding: 0 33px
+		height: 60px
+		+xs 
+			padding: 0 34px
+		.btn__title
+			+f(14px, null, 18px)
+			text-transform: uppercase
+	&__main 
+		+clr 
+		+sm 
+			padding-top: 40px
+	&__contacts
+		float: left
+		width: 50%
+		+sm 
+			float: none
+			width: auto
+	&__right
+		float: right
+		width: 50%
+	&__mail
+		position: relative
+		display: inline-block
+		vertical-align: top
+		margin-bottom: 25px
+		color: $red
+		font-family: $familySecondary
+		+f(28px, 400, 38px)
+		text-decoration: none
+		+sm 
+			margin-bottom: 10px
+			+f(20px, null, 32px)
+		+hover 
+			&:before
+				opacity: 0
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 0
+			border-bottom: 1px solid $red
+			transition: opacity 0.3s
+	&__phone
+		position: relative
+		display: inline-block
+		vertical-align: top
+		color: $white
+		font-family: $familySecondary
+		+f(15px, 400, 18px)
+		text-decoration: none
+		+sm 
+			+f(18px, null, 28px)
+		+hover
+			&:before
+				opacity: 1
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 0
+			border-bottom: 1px solid $white
+			opacity: 0
+			transition: opacity 0.3s
+	&__social
+		padding-top: 10px
+		margin: 0 -10px
+		font-size: 0
+		+sm 
+			padding-top: 14px
+			margin: 0 -16px
+		&-item
+			display: inline-block
+			vertical-align: top
+			padding: 0 10px
+			height: 40px
+			opacity: 0.5
+			+vertical 
+			transition: opacity 0.3s
+			+sm 
+				padding: 16px
+				height: auto
+			+hover
+				opacity: 1
+		&-fb
+			font-size: 17px
+		&-insta
+			font-size: 16px
+		&-icon 
+			display: inline-block
+			vertical-align: middle
+			fill: $white
+			+sm 
+				font-size: 23px
+	&__right
+		float: right
+		width: 50%
+		max-width: 350px
+		+md 
+			max-width: 300px
+		+sm 
+			float: none
+			padding-top: 35px
+			width: auto
+			max-width: none
+	&__nav 
+		float: left
+		+sm 
+			display: none
+	&__item
+		font-size: 0
+		&:not(:last-child)
+			margin-bottom: 33px
+	&__link
+		display: inline-block
+		vertical-align: top
+		color: $white
+		opacity: 0.5
+		font-family: $familySecondary
+		+f(15px, 400, 18px)
+		letter-spacing: 0.025px
+		text-decoration: none
+		transition: opacity 0.3s
+		+hover
+			opacity: 1
+	&__copyright
+		overflow: hidden
+	&__logo
+		margin-left: auto
+		margin-right: -10px
+		margin-bottom: 44px
+		color: $white
+		text-align: left
+		+sm 
+			display: none
+		.logo__icon
+			fill: $white
+	&__copy
+		margin-left: auto
+		max-width: 120px
+		opacity: 0.5
+		+f(13px, 400, 24px)
+		letter-spacing: 0.5px
+		text-align: right
+		transition: opacity 0.3s
+		+sm 
+			margin: 0
+			max-width: none
+			text-align: left

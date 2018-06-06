@@ -1,0 +1,146 @@
+.hero
+	position: relative
+	// min-height: 902px
+	min-height: 1500px
+	+md 
+		min-height: 666px
+	&__bg
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		overflow: hidden
+		height: 902px
+		+md 
+			top: auto 
+			bottom: 0
+			height: 367px
+		&-left,
+		&-right
+			position: absolute
+			top: 0
+			bottom: 0
+			width: 60%
+			min-width: 1448px
+			background-size: cover
+		&-left
+			left: 0
+			background-position: left center
+			+md 
+				display: none
+		&-right
+			right: 0
+			background-position: right center
+			+xl
+				right: -200px
+			+md 
+				left: 0
+				right: -214px
+				width: auto
+				min-width: 589px
+				background-position: left bottom
+	&__figure
+		position: absolute
+		top: 0
+		left: 0
+		width: 1em
+		height: 1.5em
+		font-size: 1000px
+		+md
+			top: auto
+			left: -48px
+			bottom: -30px
+			font-size: 270px
+		&-shadow,
+		&-fill 
+			&:before,
+			&:after
+				content: ''
+				position: absolute
+				top: 0
+			&:before
+				right: 0
+				width: 60%
+				height: 33.33%
+			&:after
+				left: 0
+				width: 50%
+				height: 100%
+		&-shadow 
+			&:before,
+			&:after
+				box-shadow: 0 8px 16px 0 rgba($black,0.05)
+		&-fill
+			&:before,
+			&:after
+				background: $white
+	&__content
+		position: relative
+		z-index: 1
+		padding: 160px 127px
+		+lg 
+			padding-left: 90px
+			padding-right: 90px
+		+md 
+			padding: 0 25px 269px
+		&-in 
+			+md 
+				padding: 118px 25px 30px
+				margin: 0 -25px
+				background: $white
+	&__title
+		margin-bottom: 30px
+		max-width: 615px
+		+md 
+			margin-bottom: 20px
+			max-width: 325px
+	&__description
+		margin-bottom: 63px
+		max-width: 288px
+		+md 
+			margin-bottom: 0
+	&__lang
+		position: absolute
+		z-index: 2
+		top: 0
+		left: 0
+		right: 0
+		padding: 55px 89px 0 0
+		max-width: 1000px
+		text-align: right
+		+md 
+			padding: 30px 20px
+		&-item
+			position: relative
+			display: inline-block
+			vertical-align: top
+			padding: 5px
+			color: $dark
+			opacity: 0.3
+			+f(11px, 700, 13px)
+			letter-spacing: 1px
+			text-transform: uppercase
+			text-decoration: none
+			transition: opacity 0.3s
+			&.is-active
+				opacity: 1
+			+hover
+				&:before
+					opacity: 1
+			&:before
+				content: ''
+				position: absolute
+				left: 5px
+				right: 5px
+				bottom: 5px
+				border-bottom: 1px solid $dark
+				opacity: 0
+				transition: opacity 0.3s
+	&__label
+		margin-top: 10px
+		opacity: 0.4
+		+f(14px, 600, 17px)
+	&__btn 
+		height: 60px
+		+sm 
+			height: 60px

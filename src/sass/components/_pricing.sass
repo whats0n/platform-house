@@ -1,0 +1,39 @@
+.pricing
+	position: relative
+	z-index: 10
+	padding: 12px 0
+	+sm 
+		padding-top: 47px
+	&__inner
+		padding: 0 180px
+		+lg 
+			padding: 0 90px
+		+md
+			padding: 0 25px
+	&__label
+		position: absolute
+		top: 8px
+		left: 90px
+		+lg
+			left: 45px
+		+md 
+			position: relative
+			top: auto
+			left: auto
+		+sm 
+			padding: 0 10px
+	&__items
+		margin: -10px -8px
+		font-size: 0
+		+sm
+			margin: -10px -25px
+	&__item
+		display: inline-block
+		vertical-align: top
+		padding: 10px 8px
+		width: 33.33%
+		+md 
+			width: 50%
+		+xs
+			padding: 10px 0
+			width: 100%

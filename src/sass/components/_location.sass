@@ -1,0 +1,98 @@
+$start: rgba($white,0) 0%
+$end:  #f7f7f8 70%
+
+.map
+	position: relative
+	z-index: -1
+	margin-top: -300px
+	margin-bottom: -466px
+	height: 1722px
+	background: #f7f7f8
+	+md
+		margin: 0
+		height: 775px
+	&:before
+		content: ''
+		position: absolute
+		z-index: 100
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: -moz-radial-gradient(center, ellipse cover, $start, $end)
+		background: -webkit-radial-gradient(center, ellipse cover, $start, $end)
+		background: -o-radial-gradient(center, ellipse cover, $start, $end)
+		background: -ms-radial-gradient(center, ellipse cover, $start, $end)
+		background: radial-gradient(ellipse at center, $start, $end)
+		pointer-events: none
+		+md 
+			background: linear-gradient(to bottom, #f7f7f8 0%, rgba($white, 0) 30%)
+
+.location
+	&__content
+		position: absolute
+		top: 500px
+		left: 0
+		right: 0
+		+md 
+			top: 68px
+	&__inner
+		padding: 0 180px
+		+lg 
+			padding: 0 90px
+		+md
+			padding: 0 25px
+	&__label
+		position: absolute
+		top: 8px
+		left: 90px
+		+lg
+			left: 45px
+		+md 
+			position: relative
+			top: auto
+			left: auto
+	&__title
+		margin-bottom: 30px
+		max-width: 368px
+		+sm 
+			max-width: 260px
+	&__link
+		position: relative
+		display: inline-block
+		vertical-align: top
+		padding-left: 33px
+		padding-right: 29px
+		color: $dark
+		font-size: 0
+		+hover
+			.location__link-title:before
+				opacity: 1
+		&-icon,
+		&-title,
+		&-arrow
+			display: inline-block
+			vertical-align: middle
+		&-title
+			position: relative
+			font-family: $familySecondary
+			+f(18px, 400, 23px)
+			&:before
+				content: ''
+				position: absolute
+				left: 0
+				right: 0
+				bottom: -2px
+				border-bottom: 1px solid $dark
+				opacity: 0
+				transition: opacity 0.3s
+		&-icon 
+			position: absolute
+			top: 3px
+			left: 0
+			height: 18px
+		&-arrow
+			position: absolute
+			top: 6px
+			right: 0
+			font-size: 14px

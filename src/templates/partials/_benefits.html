@@ -1,0 +1,43 @@
+<!-- begin benefits -->
+<div class="benefits">
+	<div class="inner benefits__inner">
+		<div class="sm-label side-label benefits__label">Benefits</div>
+		<h2 class="title-md benefits__title">PLATFORM House nie sú kancelárie, je to životný štýl</h2>
+		{% for item in [
+			{
+				img: 'img-1',
+				size: 'lg',
+				list: [ 'Unikátne priestory', 'Flexibilné podmienky', 'Moderná technika', 'Talentovaní ľudia' ]
+			},
+			{
+				img: 'img-2',
+				size: 'sm',
+				list: [ 'Chillout a oddychové zóny', 'Prístup k iným úspešným podnikateľom a firmám', 'Pravidelné podujatia pre rozvoj osobnosti a možnosti vzdelávania', 'Reštaurácia s kvalitným a zdravým jedlom priamo v budove' ]
+			},
+			{
+				img: 'img-3',
+				size: 'md',
+				list: [ 'Recepcia k tvojim službám', 'Parkovanie pre bicykle', 'Verejná doprava 3 minúty od budovy', 'Vysokorýchlostný internet' ]
+			}
+		] %}
+			<div class="benefits__item benefits__item_{{item.size}} benefits__item_{% if loop.index % 2 == 0 %}even{% else %}odd{% endif %}">
+				<ul class="benefits__list text-lg">
+					{% for item in item.list %}
+						<li>{{item}}</li>
+					{% endfor %}
+				</ul>
+				<div class="benefits__img">
+					<div class="benefits__img-in">
+						<div class="benefits__picture" style="background-image: url(img/{{item.img}}.jpg);"></div>
+						<div class="benefits__figure">
+							<div class="benefits__figure-container js-parallax">
+								<div class="benefits__figure-in"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
+<!-- end benefits -->
