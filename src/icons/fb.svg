@@ -4,7 +4,7 @@
     <title>Fill 1</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="F_01_1" transform="translate(-90.000000, -7115.000000)" fill="#FFFFFF">
             <g id="Group-16" transform="translate(90.000000, 7015.000000)">
                 <path d="M3.2248,117 L3.2,109.272727 L0,109.272727 L0,106.181818 L3.2,106.181818 L3.2,104.25 C3.2,101.382409 5.0384,100 7.6872,100 C8.956,100 10.0464,100.091182 10.364,100.132136 L10.364,103.129545 L8.5272,103.130318 C7.0864,103.130318 6.8072,103.791 6.8072,104.761545 L6.8072,106.181818 L11,106.181818 L9.4,109.272727 L6.8072,109.272727 L6.8072,117 L3.2248,117 Z" id="Fill-1"></path>

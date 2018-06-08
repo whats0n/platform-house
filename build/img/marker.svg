@@ -1,0 +1,9 @@
+<svg width="29" height="32" viewBox="0 0 29 32" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        marker
+    </title>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M6 28h17a2 2 0 0 0 2-2V13.96a2 2 0 0 0-.75-1.562L16.19 5.953a2 2 0 0 0-2.425-.056L4.824 12.4A2 2 0 0 0 4 14.017V26a2 2 0 0 0 2 2z" fill="#F03454"/>
+        <path d="M3 31h23a2 2 0 0 0 2-2V11.983a2 2 0 0 0-.78-1.585L16.174 1.904a2 2 0 0 0-2.381-.042L1.838 10.4A2 2 0 0 0 1 12.028V29a2 2 0 0 0 2 2z" stroke="#F03454" stroke-width="2"/>
+    </g>
+</svg>

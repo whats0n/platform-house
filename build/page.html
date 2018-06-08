@@ -48,13 +48,15 @@
                 <p>Nech už potrebuješ pracovný stôl alebo malú kanceláriu, môžeš ju mať do 24 hodín.</p>
               </div>
             </div>
-            <button class="btn">
-              <svg class="icon icon-plus btn__plus">
-                <use xlink:href="img/sprite.svg#icon-plus"></use>
-              </svg>
-              <span class="btn__title">Staň sa členom</span>
-            </button>
-            <div class="hero__label">a vyskúšj si týždeň zadarmo</div>
+            <div class="hero__footer">
+              <button class="btn hero__btn">
+                <svg class="icon icon-plus btn__plus">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+                <span class="btn__title">Staň sa členom</span>
+              </button>
+              <div class="hero__label">a vyskúšj si týždeň zadarmo</div>
+            </div>
           </div>
         </div>
       </div>
@@ -123,7 +125,7 @@
               <div class="floors__item floors__item_red js-floors-item">
                 <div class="floors__number">3</div>
                 <div class="floors__content">
-                  <img src="img/freelancers.svg" alt="freelancers" class="floors__icon">
+                  <img src="img/scaleups.svg" alt="scaleups" class="floors__icon">
                   <div class="floors__header js-floors-control" data-target="figure-1">
                     <div class="floors__arrow"></div>
                     <h2 class="title-md floors__title">Scaleups</h2>
@@ -157,7 +159,7 @@
               <div class="floors__item floors__item_yellow js-floors-item">
                 <div class="floors__number">1</div>
                 <div class="floors__content">
-                  <img src="img/scaleups.svg" alt="scaleups" class="floors__icon">
+                  <img src="img/freelancers.svg" alt="freelancers" class="floors__icon">
                   <div class="floors__header js-floors-control" data-target="figure-3">
                     <div class="floors__arrow"></div>
                     <h2 class="title-md floors__title">Freelancers</h2>
@@ -180,7 +182,7 @@
       </div>
       <!-- end floors -->
       <!-- begin benefits -->
-      <div class="benefits">
+      <div class="benefits" data-scrollto-container="Benefits">
         <div class="inner benefits__inner">
           <div class="sm-label side-label benefits__label">Benefits</div>
           <h2 class="title-md benefits__title">PLATFORM House nie sú kancelárie, je to životný štýl</h2>
@@ -242,7 +244,7 @@
       </div>
       <!-- end benefits -->
       <!-- begin pricing -->
-      <div class="pricing">
+      <div class="pricing" data-scrollto-container="Pricing">
         <div class="inner pricing__inner">
           <div class="sm-label side-label pricing__label">Pricing</div>
           <div class="pricing__items">
@@ -299,7 +301,7 @@
       </div>
       <!-- end pricing -->
       <!-- begin location -->
-      <div class="location">
+      <div class="location" data-scrollto-container="Location">
         <div class="inner">
           <div class="map js-map"></div>
           <div class="location__content">
@@ -413,13 +415,13 @@
             <div class="footer__right">
               <ul class="footer__nav">
                 <li class="footer__item">
-                  <a href="#" class="footer__link">Benefits</a>
+                  <a href="#" class="footer__link" data-scrollto-control="Benefits">Benefits</a>
                 </li>
                 <li class="footer__item">
-                  <a href="#" class="footer__link">Pricing</a>
+                  <a href="#" class="footer__link" data-scrollto-control="Pricing">Pricing</a>
                 </li>
                 <li class="footer__item">
-                  <a href="#" class="footer__link">Location</a>
+                  <a href="#" class="footer__link" data-scrollto-control="Location">Location</a>
                 </li>
               </ul>
               <div class="footer__copyright">

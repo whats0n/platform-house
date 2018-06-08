@@ -9,7 +9,7 @@
 	+vertical 
 	+hover
 		.btn-link__title:before
-			opacity: 1
+			transform: scaleX(1)
 	&_lg 
 		height: 60px
 		.btn-link__title
@@ -42,5 +42,6 @@
 			right: 0
 			bottom: -2px
 			border-bottom: 1px solid $dark
-			opacity: 0
-			transition: opacity 0.3s
+			transform: scaleX(0)
+			transform-origin: left center
+			transition: transform 0.3s

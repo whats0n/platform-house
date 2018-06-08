@@ -4,8 +4,10 @@ $end:  #f7f7f8 70%
 .map
 	position: relative
 	z-index: -1
+	float: left
 	margin-top: -300px
 	margin-bottom: -466px
+	width: 100%
 	height: 1722px
 	background: #f7f7f8
 	+md
@@ -31,7 +33,7 @@ $end:  #f7f7f8 70%
 .location
 	&__content
 		position: absolute
-		top: 500px
+		top: 200px
 		left: 0
 		right: 0
 		+md 
@@ -41,7 +43,7 @@ $end:  #f7f7f8 70%
 		+lg 
 			padding: 0 90px
 		+md
-			padding: 0 25px
+			padding: 0 35px
 	&__label
 		position: absolute
 		top: 8px
@@ -56,6 +58,7 @@ $end:  #f7f7f8 70%
 		margin-bottom: 30px
 		max-width: 368px
 		+sm 
+			margin-bottom: 20px
 			max-width: 260px
 	&__link
 		position: relative
@@ -67,7 +70,7 @@ $end:  #f7f7f8 70%
 		font-size: 0
 		+hover
 			.location__link-title:before
-				opacity: 1
+				transform: scaleX(1)
 		&-icon,
 		&-title,
 		&-arrow
@@ -84,8 +87,9 @@ $end:  #f7f7f8 70%
 				right: 0
 				bottom: -2px
 				border-bottom: 1px solid $dark
-				opacity: 0
-				transition: opacity 0.3s
+				transform: scaleX(0)
+				transform-origin: left center
+				transition: transform 0.4s
 		&-icon 
 			position: absolute
 			top: 3px

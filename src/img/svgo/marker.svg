@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="32px" viewBox="0 0 29 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>marker</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="F_01_2" transform="translate(-620.000000, -4979.000000)">
+            <g id="marker" transform="translate(621.000000, 4980.000000)">
+                <path d="M5,27 L22,27 C23.1045695,27 24,26.1045695 24,25 L24,12.9599152 C24,12.3522861 23.7237647,11.7776089 23.2492527,11.3980677 L15.1914732,4.95300667 C14.4878414,4.39020276 13.4947528,4.36738627 12.7660159,4.89728113 L3.82379538,11.3995414 C3.30622564,11.7758878 3,12.3771808 3,13.0171145 L3,25 C3,26.1045695 3.8954305,27 5,27 Z" id="Path-75" fill="#F03454" fill-rule="evenodd"></path>
+                <path d="M2,30 L25,30 C26.1045695,30 27,29.1045695 27,28 L27,10.9834469 C27,10.3624598 26.7115466,9.77670201 26.219311,9.39811385 L15.175192,0.903863427 C14.4771668,0.366998396 13.5101275,0.349858416 12.7935157,0.861650161 L0.837634678,9.40033306 C0.31197762,9.77574822 -9.67284525e-16,10.381929 -8.8817842e-16,11.0278793 L0,28 C1.3527075e-16,29.1045695 0.8954305,30 2,30 Z" id="Path-75" stroke="#F03454" stroke-width="2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

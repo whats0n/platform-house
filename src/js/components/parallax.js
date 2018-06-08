@@ -4,5 +4,5 @@ const parallaxClassName = '.js-parallax';
 
 $(parallaxClassName).length && new Rellax(parallaxClassName, {
   center: true,
-  speed: 0.9
+  speed: 1.5
 });
