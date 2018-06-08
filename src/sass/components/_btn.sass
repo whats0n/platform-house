@@ -17,13 +17,20 @@
 			transform: scale(1.12)
 	&_lg 
 		height: 60px
+		+lg 
+			padding: 0 20px
+		+md 
+			padding: 0 25px
+			height: 60px
 		+xs 
-			padding: 0 40px
+			padding: 0 40px 0 30px
 		.btn__title
-			+sm 
-				+f(18px, null, 23px)
+			+md 
+				+f(18px, 500, 23px)
+				text-transform: none
 		.btn__plus
-			+sm 
+			+md 
+				margin-right: 15px
 				font-size: 12px
 	&:after
 		content: ''
