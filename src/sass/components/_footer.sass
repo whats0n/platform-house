@@ -65,15 +65,17 @@
 			+f(20px, null, 32px)
 		+hover 
 			&:before
-				opacity: 0
+				transform: scaleX(1)
 		&:before
 			content: ''
 			position: absolute
 			left: 0
 			right: 0
 			bottom: 0
-			border-bottom: 1px solid $red
-			transition: opacity 0.3s
+			border-bottom: 2px solid $red
+			transform: scaleX(0)
+			transform-origin: left center
+			transition: transform 0.4s
 	&__phone
 		position: relative
 		display: inline-block
@@ -86,16 +88,17 @@
 			+f(18px, null, 28px)
 		+hover
 			&:before
-				opacity: 1
+				transform: scaleX(1)
 		&:before
 			content: ''
 			position: absolute
 			left: 0
 			right: 0
 			bottom: 0
-			border-bottom: 1px solid $white
-			opacity: 0
-			transition: opacity 0.3s
+			border-bottom: 2px solid $white
+			transform: scaleX(0)
+			transform-origin: left center
+			transition: transform 0.3s
 	&__social
 		padding-top: 10px
 		margin: 0 -10px
