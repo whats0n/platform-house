@@ -1,3 +1,24 @@
 {% macro icon(i, classList) %}
 <svg class="icon icon-{{i}} {{classList}}"><use xlink:href="img/sprite.svg#icon-{{i}}"></use></svg>
 {% endmacro %}
+
+{% macro field(props) %}
+<div class="field js-field {{props.classList}}">
+	{% if props.placeholder %}
+		<div class="field__placeholder">{{props.placeholder}}</div>
+	{% endif %}
+	<div class="field__control">
+		{% if props.select %}
+			<div class="field__select">
+				<select class="js-field-select" style="width: 100%;">
+					{% for item in props.select.options %}
+						<option value="{{item.value}}" {% if item.icon %}data-icon="{{item.icon}}"{% endif %} {% if item.color %}data-color="is-{{item.color}}"{% endif %}>{{item.value}}</option>
+					{% endfor %}
+				</select>
+			</div>
+		{% else %}
+			<input type="{{props.type or 'text'}}" class="field__input js-field-input {{props.inputClassList}}" {{props.inputAttrs | safe}} {% if props.rules %}data-rules='{{props.rules | safe}}'{% endif %} autocomplete="off">
+		{% endif %}
+	</div>
+</div>
+{% endmacro %}

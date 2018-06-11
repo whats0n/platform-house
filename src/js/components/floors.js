@@ -72,5 +72,6 @@ const show = () => {
 };
 
 WIN.on('load scroll', () => {
+  if (!figuresParent.length) return;
   show();
 });

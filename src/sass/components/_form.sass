@@ -1,0 +1,102 @@
+.form
+	position: relative
+	padding: 0 120px 80px
+	background: $white
+	box-shadow: 0 8px 16px 0 rgba($black, .05)
+	+lg 
+		padding: 0 90px 80px
+	+sm 
+		padding: 0 25px 60px
+	&__title
+		float: left
+		margin: -40px 0 60px
+		width: 100%
+		+md
+			margin: -58px 0 50px
+			max-width: 200px
+	&__description
+		clear: both
+		max-width: 315px
+		+xs 
+			padding: 0 10px
+			max-width: 335px
+	&__header
+		margin-bottom: 47px
+		+clr
+		+xs 
+			margin-bottom: 25px
+	&__footer
+		+sm 
+			margin: 0 auto
+			max-width: 400px
+	&__body
+		position: relative
+		margin-bottom: 65px
+	&__field-group
+		margin: 0 -20px
+		+clr
+		&:not(:last-child)
+			margin-bottom: 85px
+			+xs 
+				margin-bottom: 20px
+	&__field 
+		float: left
+		padding: 15px 20px
+		width: 100%
+		&_50
+			width: 50%
+			+xs
+				width: 100%
+	&__figure
+		position: absolute
+		z-index: 10
+		right: 30px
+		bottom: 0
+		width: 1.5em
+		height: 1em
+		font-size: 200px
+		transform: translate3d(100%, -31px, 0)
+		+lg
+			right: 80px
+			bottom: 20px
+			font-size: 14vw
+		+md 
+			display: none
+	&__figure-container,
+	&__figure-in 
+		width: 100%
+		height: 100%
+	&__figure-container
+		will-change: transform
+		&:before,
+		&:after
+			z-index: 1
+			box-shadow: 0 8px 16px 0 rgba($black,0.05)
+	&__figure-in 
+		&:before,
+		&:after
+			z-index: 2
+			background: $white
+	&__figure-container:before,
+	&__figure-container:after,
+	&__figure-in:before,
+	&__figure-in:after
+		content: ''
+		position: absolute
+		top: 50%
+		left: 33.33%
+	&__figure-in:before,
+	&__figure-container:before
+		top: 0
+		left: 0
+		width: 66.34%
+		height: 50%
+	&__figure-in:after,
+	&__figure-container:after
+		right: 0
+		bottom: 0
+		width: 66.34%
+		height: 50%
+
+.help-block
+	display: none

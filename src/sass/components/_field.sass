@@ -1,0 +1,144 @@
+.field
+	position: relative
+	&.is-active
+		.field
+			&__control:before
+				transform: scaleX(1)
+			&__placeholder
+				transform: translate3d(0,3px,0) scale(0.778)
+	&.is-error
+		.field
+			&__control
+				border-color: $red
+			&__placeholder
+				color: $red
+	&__control
+		position: relative
+		border-bottom: 2px solid rgba($dark, 0.05)
+		transition: border-color 0.3s
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			right: 0
+			bottom: -2px
+			border-bottom: 2px solid $dark
+			transform: scaleX(0)
+			transform-origin: left top
+			transition: transform 0.4s, border-color 0.3s
+	&__input,
+	&__placeholder
+		padding: 0 10px
+		color: $dark
+		font-family: $familyPrimary
+		+f(18px)
+	&__input,
+	&__select select
+		width: 100%
+		height: 62px
+		background: none
+		appearance: none
+	&__input
+		+f(null, 600, normal)
+		&:-webkit-autofill
+			-webkit-box-shadow: inset 0 0 0px 1000px $white
+			&:hover 
+				-webkit-box-shadow: inset 0 0 0px 1000px $white
+	&__placeholder
+		position: absolute
+		z-index: 10
+		top: 0
+		left: 0
+		right: 0
+		opacity: 0.5
+		+f(null, 400, 22px)
+		+text-overflow
+		pointer-events: none
+		transform: translate3d(0,41px,0)
+		transform-origin: left top
+		transition: transform 0.3s, color 0.3s
+		~ .field__control
+			padding-top: 20px
+	&__select
+		font-family: $familyPrimary
+		.select2-container--default .select2-selection--multiple, .select2-container--default .select2-selection--single
+			padding: 19px 0
+			border: none
+			border-radius: 0
+			height: auto
+			background: none
+		.select2-container--default .select2-selection--single .select2-selection__rendered
+			padding: 0 38px 0 10px
+			color: $dark
+			+f(18px, 600, 22px)
+		.select2-container--default .select2-selection--single .select2-selection__arrow
+			top: 50%
+			right: 10px
+			width: 9px
+			height: 9px
+			margin-top: -7px
+			transition: transform 0.3s
+			b 
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				margin: 0
+				border: none
+				width: auto
+				height: auto
+				transform: rotate(45deg)
+				&:before,
+				&:after
+					content: ''
+					position: absolute
+					bottom: 0
+				&:before
+					left: 0
+					right: 0
+					border-bottom: 2px solid $dark
+				&:after
+					top: 0
+					right: 0
+					border-right: 2px solid $dark
+		.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow, 
+		.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow
+			transform: rotateX(180deg) translateY(-5px)
+		//dropdown
+		.select2-dropdown
+			padding: 12px 0
+			margin-top: 2px
+			border: none
+			box-shadow: 0 4px 12px 0 rgba($black, .1)
+		.select2-results__option
+			padding: 10px
+			color: rgba($dark, 0.5)
+			+f(18px, 600, 22px)
+			transition: color 0.3s
+			+hover
+				// color: $dark
+				.is-yellow
+					color: #FFD527
+				.is-blue
+					color: #54b6ed
+				.is-red
+					color: $red
+		.select2-container--default .select2-results__option[aria-selected=true]
+			background: none
+		.select2-container--default .select2-results__option--highlighted[aria-selected]
+			color: rgba($dark, 0.5)
+			background: none
+			+hover
+				// color: $dark
+	&__select-item
+		position: relative
+		display: block
+		padding-left: 55px
+		transition: color 0.3s
+		img 
+			position: absolute
+			top: 50%
+			left: 0
+			width: 40px
+			transform: translate3d(0,-50%,0)

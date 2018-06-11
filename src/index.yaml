@@ -2,4 +2,4 @@ ProjectTitle: platform-house
 
 PageList:
 - file: page.html
-  ready: 50
+- file: form.html
