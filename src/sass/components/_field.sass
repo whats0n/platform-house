@@ -2,16 +2,22 @@
 	position: relative
 	&.is-active
 		.field
-			&__control:before
-				transform: scaleX(1)
 			&__placeholder
-				transform: translate3d(0,3px,0) scale(0.778)
+				transform: translate3d(10px,3px,0) scale(0.778)
 	&.is-error
 		.field
-			&__control
+			&__control,
+			&__control:before
 				border-color: $red
 			&__placeholder
 				color: $red
+	&.is-focus
+		.field
+			&__control:before
+				transform: scaleX(1)
+		.field
+			&__placeholder
+				transform: translate3d(10px,3px,0) scale(0.778)
 	&__control
 		position: relative
 		border-bottom: 2px solid rgba($dark, 0.05)
@@ -25,10 +31,9 @@
 			border-bottom: 2px solid $dark
 			transform: scaleX(0)
 			transform-origin: left top
-			transition: transform 0.7s
+			transition: transform 0.7s, border-color 0.3s
 	&__input,
 	&__placeholder
-		padding: 0 10px
 		color: $dark
 		font-family: $familyPrimary
 		+f(18px)
@@ -39,6 +44,10 @@
 		background: none
 		appearance: none
 	&__input
+		display: block
+		padding: 21px 10px 20px
+		border: none
+		resize: none
 		+f(null, 600, normal)
 		&:-webkit-autofill
 			-webkit-box-shadow: inset 0 0 0px 1000px $white
@@ -54,7 +63,7 @@
 		+f(null, 400, 22px)
 		+text-overflow
 		pointer-events: none
-		transform: translate3d(0,41px,0)
+		transform: translate3d(10px,41px,0)
 		transform-origin: left top
 		transition: transform 0.3s, color 0.3s
 		~ .field__control

@@ -16,8 +16,10 @@
 					{% endfor %}
 				</select>
 			</div>
+		{% elif props.textarea %}
+			<textarea class="field__input js-field-textarea {{props.inputClassList}}" {{props.inputAttrs | safe}} autocomplete="off"></textarea>
 		{% else %}
-			<input type="{{props.type or 'text'}}" class="field__input js-field-input {{props.inputClassList}}" {{props.inputAttrs | safe}} {% if props.rules %}data-rules='{{props.rules | safe}}'{% endif %} autocomplete="off">
+			<input type="{{props.type or 'text'}}" class="field__input js-field-input {{props.inputClassList}}" {{props.inputAttrs | safe}} autocomplete="off">
 		{% endif %}
 	</div>
 </div>

@@ -1,5 +1,6 @@
 import 'select2';
-import {ACTIVE} from '../constants';
+import autosize from 'autosize';
+import {ACTIVE, FOCUS} from '../constants';
 
 const onChange = props => {
   const {field, control} = props;
@@ -10,6 +11,7 @@ const onChange = props => {
 const onBlur = props => {
   const {field, control} = props;
   const val = control.val();
+  field.removeClass(FOCUS);
   if (!val || !val.length) field.removeClass(ACTIVE);
 };
 
@@ -23,15 +25,17 @@ $('.js-field').each((i, field) => {
   field = $(field);
   //controls
   const input = field.find('.js-field-input');
+  const textarea = field.find('.js-field-textarea');
   const select = field.find('.js-field-select');
-  const control = select.length ? select : input;
+  const control = select.length ? select : textarea.length ? textarea : input;
 
-  if (input.length) {
-    input.on({
+  if (input.length || textarea.length) {
+    control.on({
       input() { onChange({ control, field }); },
-      focus() { field.addClass(ACTIVE); },
+      focus() { field.addClass(FOCUS); },
       blur() { onBlur({ control, field }); }
     });
+    textarea.length && autosize(textarea);
     onChange({ control, field });
   } 
 

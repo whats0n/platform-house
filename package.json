@@ -11,6 +11,7 @@
   "authors": "Coderiver <html@coderiver.com.ua>",
   "devDependencies": {
     "autoprefixer": "^8.3.0",
+    "autosize": "^4.0.2",
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.4",
