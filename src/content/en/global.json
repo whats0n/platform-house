@@ -1,9 +1,9 @@
 {
 	"lang": "en",
 	"footer": {
-		"title": "Interested? Join us.",
+		"title": "Interested? Join&nbsp;us.",
 		"btn": "Become a member",
-		"label": "Try a free week",
+		"label": "Try a free day",
 		"email": "info@platformhouse.com",
 		"phone": {
 			"title": "+421 (0) 903 333 333",
@@ -27,7 +27,7 @@
 	},
 	"form": {
 		"title": "Contact form",
-		"description": "Contact us, join us or just <strong>try a free week</strong>.",
+		"description": "Contact us, join us or just <strong>try a free day</strong>.",
 		"name": "Name",
 		"surname": "Surname",
 		"email": "Email",

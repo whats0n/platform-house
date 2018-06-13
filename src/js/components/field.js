@@ -55,3 +55,18 @@ $('.js-field').each((i, field) => {
 
 
 });
+
+const regex = /^[\d ()+-]+$/;
+
+$('.js-input-phone').each((i, input) => {
+  input = $(input);
+  let val = '';
+  input.on('input', () => {
+    const currentVal = input.val();
+    if (currentVal) {
+      const newVal = currentVal.match(regex);
+      val = newVal ? newVal : val;
+      input.val(val);
+    }
+  });
+});

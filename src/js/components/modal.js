@@ -1,7 +1,8 @@
-import {BODY, OPEN} from '../constants';
+import {BODY, OPEN, WIN, FIXED, touchDetect} from '../constants';
 
 const OVERFLOW_HIDDEN = 'is-overflow-hidden';
 const modals = $('[data-modal]');
+let scrollTop = null;
 
 const show = (target) => {
   BODY.addClass(OVERFLOW_HIDDEN);
@@ -9,6 +10,13 @@ const show = (target) => {
   	.filter(`[data-modal="${target}"]`)
   	.scrollTop(0)
   	.addClass(OPEN);
+
+  if (touchDetect) {
+  	scrollTop = WIN.scrollTop();
+  	BODY
+  		.addClass(FIXED)
+  		.css('top', `-${scrollTop}px`);
+  }
 };
 
 const hide = (target) => {
@@ -16,6 +24,12 @@ const hide = (target) => {
   modals
   	.filter(`[data-modal="${target}"]`)
   	.removeClass(OPEN);
+  if (touchDetect) {
+  	BODY
+  		.removeClass(FIXED)
+  		.removeAttr('style');
+    WIN.scrollTop(scrollTop);
+  }
 };
 
 $('[data-modal-open]').click(e => {

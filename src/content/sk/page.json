@@ -3,7 +3,7 @@
 		"title": "Zdieľané priestory pre kreatívcov",
 		"description": "Nech už potrebuješ pracovný stôl alebo malú kanceláriu, môžeš ju mať do 24 hodín.",
 		"btn": "Staň sa členom",
-		"label": "a vyskúšj si týždeň zadarmo"
+		"label": "a vyskúšj si deň zadarmo"
 	},
 	"floors": [
 		{
@@ -63,7 +63,7 @@
 				"description": "Staň sa členom do&nbsp;24&nbsp;hodín.",
 				"btn": "Staň sa členom",
 				"btnIcon": "plus",
-				"label": "a vyskúšj si týždeň zadarmo"
+				"label": "a vyskúšj si deň zadarmo"
 			},
 			{
 				"title": "Startups",

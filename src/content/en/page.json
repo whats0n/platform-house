@@ -3,7 +3,7 @@
 		"title": "Shared space for&nbsp;creative minds",
 		"description": "Do you need a desk or a small office? You can have it in 24 hours.",
 		"btn": "Become a member",
-		"label": "Try a free week"
+		"label": "Try a free day"
 	},
 	"floors": [
 		{
@@ -63,7 +63,7 @@
 				"description": "Become a member in&nbsp;24&nbsp;hours.",
 				"btn": "Become a member",
 				"btnIcon": "plus",
-				"label": "Try a free week"
+				"label": "Try a free day"
 			},
 			{
 				"title": "Startups",
