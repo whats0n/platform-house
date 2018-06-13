@@ -15,7 +15,7 @@
 						</div>
 						<div class="item__footer">
 							{% if item.btn %}
-								<button class="btn btn_lg item__btn">
+								<button class="btn btn_lg item__btn" data-modal-open="form">
 									{{mixins.icon(item.btnIcon, 'btn__plus')}}
 									<span class="btn__title">{{item.btn | safe}}</span>
 								</button>

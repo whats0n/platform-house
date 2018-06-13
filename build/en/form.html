@@ -12,9 +12,9 @@
     <!-- BEGIN content -->
     <div class="out">
       <!-- begin page -->
-      <div class="page">
+      <div class="page" data-modal="form">
         <div class="page__inner">
-          <a href="#" class="page__back js-form-close">
+          <a href="#" class="page__back" data-modal-close="form">
             <svg class="icon icon-arrow-left page__back-icon">
               <use xlink:href="/img/sprite.svg#icon-arrow-left"></use>
             </svg>
@@ -22,24 +22,24 @@
           <div class="page__container">
             <form action="/" class="form page__form js-validate">
               <div class="form__header">
-                <div class="title-lg form__title">Kontaktný formulár</div>
+                <div class="title-lg form__title">Contact form</div>
                 <div class="form__description">
-                  <p>Ozvi sa nám, pridaj sa k nám alebo si
-                    <strong>vyskúšaj týždeň zadarmo</strong>.</p>
+                  <p>Contact us, join us or just
+                    <strong>try a free week</strong>.</p>
                 </div>
               </div>
               <div class="form__body">
                 <div class="form__field-group">
                   <div class="form__field form__field_50">
                     <div class="field js-field js-validate-field">
-                      <div class="field__placeholder">Meno</div>
+                      <div class="field__placeholder">Name</div>
                       <div class="field__control">
                         <input type="text" class="field__input js-field-input js-validate-control" data-validation="required" autocomplete="off"> </div>
                     </div>
                   </div>
                   <div class="form__field form__field_50">
                     <div class="field js-field js-validate-field">
-                      <div class="field__placeholder">Priezvisko</div>
+                      <div class="field__placeholder">Surname</div>
                       <div class="field__control">
                         <input type="text" class="field__input js-field-input js-validate-control" data-validation="required" autocomplete="off"> </div>
                     </div>
@@ -53,7 +53,7 @@
                   </div>
                   <div class="form__field form__field_50">
                     <div class="field js-field js-validate-field">
-                      <div class="field__placeholder">Telefón</div>
+                      <div class="field__placeholder">Phone number</div>
                       <div class="field__control">
                         <input type="text" class="field__input js-field-input js-validate-control" data-validation="required" autocomplete="off"> </div>
                     </div>
@@ -75,7 +75,7 @@
                   </div>
                   <div class="form__field">
                     <div class="field js-field js-validate-field">
-                      <div class="field__placeholder">Správa</div>
+                      <div class="field__placeholder">Message</div>
                       <div class="field__control">
                         <textarea class="field__input field__textarea js-field-textarea js-validate-control" data-validation="required" autocomplete="off"></textarea>
                       </div>
@@ -91,16 +91,16 @@
               <div class="form__footer">
                 <button class="btn btn_xl btn_wide form__submit" type="submit">
                   <span class="form__submit-visible">
-                    <span class="btn__title">ODOSLAť</span>
+                    <span class="btn__title">Send</span>
                   </span>
                   <span class="form__submit-hidden">
                     <svg class="icon icon-check btn__check">
                       <use xlink:href="/img/sprite.svg#icon-check"></use>
                     </svg>
-                    <span class="btn__title">ODOSLAť</span>
+                    <span class="btn__title">Thanks</span>
                   </span>
                 </button>
-                <div class="form__hint">Lorem ipsum dolor sit.</div>
+                <div class="form__hint">Form was successful sent.</div>
               </div>
             </form>
           </div>

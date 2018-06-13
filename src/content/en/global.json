@@ -1,9 +1,9 @@
 {
 	"lang": "en",
 	"footer": {
-		"title": "Zaujali sme ťa? Pridaj sa k nám.",
-		"btn": "Staň sa členom",
-		"label": "a vyskúšj si týždeň zadarmo",
+		"title": "Interested? Join us.",
+		"btn": "Become a member",
+		"label": "Try a free week",
 		"email": "info@platformhouse.com",
 		"phone": {
 			"title": "+421 (0) 903 333 333",
@@ -24,5 +24,19 @@
 			}
 		],
 		"copyright": "Copyright © 2018 All Rights Reserved"
+	},
+	"form": {
+		"title": "Contact form",
+		"description": "Contact us, join us or just <strong>try a free week</strong>.",
+		"name": "Name",
+		"surname": "Surname",
+		"email": "Email",
+		"phone": "Phone number",
+		"message": "Message",
+		"btn": {
+			"default": "Send",
+			"success": "Thanks"
+		},
+		"hint": "Form was successful sent."
 	}
 }

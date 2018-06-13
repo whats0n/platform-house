@@ -1,24 +1,24 @@
 <!-- begin page -->
-<div class="page">
+<div class="page" data-modal="form">
 	<div class="page__inner">
-		<a href="#" class="page__back js-form-close">
+		<a href="#" class="page__back" data-modal-close="form">
 			{{mixins.icon('arrow-left', 'page__back-icon')}}
 		</a>
 		<div class="page__container">
 			<form action="/" class="form page__form js-validate">
 				<div class="form__header">
-					<div class="title-lg form__title">Kontaktný formulár</div>
+					<div class="title-lg form__title">{{form.title | safe}}</div>
 					<div class="form__description">
-						<p>Ozvi sa nám, pridaj sa k nám alebo si <strong>vyskúšaj týždeň zadarmo</strong>.</p>
+						<p>{{form.description | safe}}</p>
 					</div>
 				</div>
 				<div class="form__body">
 					<div class="form__field-group">
 						{% for item in [
-							{ placeholder: 'Meno', inputAttrs: 'data-validation="required"', classList: 'js-validate-field', inputClassList: 'js-validate-control' },
-							{ placeholder: 'Priezvisko', inputAttrs: 'data-validation="required"', classList: 'js-validate-field', inputClassList: 'js-validate-control' },
-							{ placeholder: 'Email', inputAttrs: 'data-validation="email"', classList: 'js-validate-field', inputClassList: 'js-validate-control' },
-							{ placeholder: 'Telefón', inputAttrs: 'data-validation="required"', classList: 'js-validate-field', inputClassList: 'js-validate-control' }
+							{ placeholder: form.name, inputAttrs: 'data-validation="required"', classList: 'js-validate-field', inputClassList: 'js-validate-control' },
+							{ placeholder: form.surname, inputAttrs: 'data-validation="required"', classList: 'js-validate-field', inputClassList: 'js-validate-control' },
+							{ placeholder: form.email, inputAttrs: 'data-validation="email"', classList: 'js-validate-field', inputClassList: 'js-validate-control' },
+							{ placeholder: form.phone, inputAttrs: 'data-validation="required"', classList: 'js-validate-field', inputClassList: 'js-validate-control' }
 						] %}
 							<div class="form__field form__field_50">
 								{{mixins.field(item)}}
@@ -39,7 +39,7 @@
 						</div>
 						<div class="form__field">
 							{{mixins.field({
-								placeholder: 'Správa',
+								placeholder: form.message,
 								textarea: true,
 								inputAttrs: 'data-validation="required"',
 								classList: 'js-validate-field',
@@ -56,14 +56,14 @@
 				<div class="form__footer">
 					<button class="btn btn_xl btn_wide form__submit" type="submit">
 						<span class="form__submit-visible">
-							<span class="btn__title">ODOSLAť</span>
+							<span class="btn__title">{{form.btn.default}}</span>
 						</span>
 						<span class="form__submit-hidden">
 							{{mixins.icon('check', 'btn__check')}}
-							<span class="btn__title">ODOSLAť</span>
+							<span class="btn__title">{{form.btn.success}}</span>
 						</span>
 					</button>
-					<div class="form__hint">Lorem ipsum dolor sit.</div>
+					<div class="form__hint">{{form.hint}}</div>
 				</div>
 			</form>
 		</div>

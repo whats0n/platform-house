@@ -34,8 +34,8 @@
         </div>
         <div class="inner hero__inner">
           <div class="hero__lang">
-            <a href="#" class="hero__lang-item is-active">Sk</a>
-            <a href="#" class="hero__lang-item ">En</a>
+            <a href="/page.html" class="hero__lang-item is-active">Sk</a>
+            <a href="/en/page.html" class="hero__lang-item ">En</a>
           </div>
           <div class="hero__figure">
             <div class="hero__figure-shadow"></div>
@@ -49,7 +49,7 @@
               </div>
             </div>
             <div class="hero__footer">
-              <button class="btn hero__btn">
+              <button class="btn hero__btn" data-modal-open="form">
                 <svg class="icon icon-plus btn__plus">
                   <use xlink:href="/img/sprite.svg#icon-plus"></use>
                 </svg>
@@ -257,7 +257,7 @@
                   <p>Staň sa členom do&nbsp;24&nbsp;hodín.</p>
                 </div>
                 <div class="item__footer">
-                  <button class="btn btn_lg item__btn">
+                  <button class="btn btn_lg item__btn" data-modal-open="form">
                     <svg class="icon icon-plus btn__plus">
                       <use xlink:href="/img/sprite.svg#icon-plus"></use>
                     </svg>
@@ -390,7 +390,7 @@
         <div class="footer__inner">
           <div class="footer__top">
             <h2 class="title-md footer__title">Zaujali sme ťa? Pridaj sa k nám.</h2>
-            <button class="btn footer__btn">
+            <button class="btn footer__btn" data-modal-open="form">
               <svg class="icon icon-plus btn__plus">
                 <use xlink:href="/img/sprite.svg#icon-plus"></use>
               </svg>
@@ -449,9 +449,9 @@
       </footer>
       <!-- end footer -->
       <!-- begin page -->
-      <div class="page">
+      <div class="page" data-modal="form">
         <div class="page__inner">
-          <a href="#" class="page__back js-form-close">
+          <a href="#" class="page__back" data-modal-close="form">
             <svg class="icon icon-arrow-left page__back-icon">
               <use xlink:href="/img/sprite.svg#icon-arrow-left"></use>
             </svg>
@@ -534,10 +534,10 @@
                     <svg class="icon icon-check btn__check">
                       <use xlink:href="/img/sprite.svg#icon-check"></use>
                     </svg>
-                    <span class="btn__title">ODOSLAť</span>
+                    <span class="btn__title">Ďakujeme</span>
                   </span>
                 </button>
-                <div class="form__hint">Lorem ipsum dolor sit.</div>
+                <div class="form__hint">Formulár bol úspešne odoslaný.</div>
               </div>
             </form>
           </div>

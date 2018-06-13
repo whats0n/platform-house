@@ -6,8 +6,8 @@
 	</div>
 	<div class="inner hero__inner">
 		<div class="hero__lang">
-			<a href="#" class="hero__lang-item {% if lang == "sk" %}is-active{% endif %}">Sk</a>
-			<a href="#" class="hero__lang-item {% if lang == "en" %}is-active{% endif %}">En</a>
+			<a href="/page.html" class="hero__lang-item {% if lang == "sk" %}is-active{% endif %}">Sk</a>
+			<a href="/en/page.html" class="hero__lang-item {% if lang == "en" %}is-active{% endif %}">En</a>
 		</div>
 		<div class="hero__figure">
 			<div class="hero__figure-shadow"></div>
@@ -21,7 +21,7 @@
 				</div>
 			</div>
 			<div class="hero__footer">
-				<button class="btn hero__btn">
+				<button class="btn hero__btn" data-modal-open="form">
 					{{mixins.icon('plus', 'btn__plus')}}
 					<span class="btn__title">{{hero.btn | safe}}</span>
 				</button>

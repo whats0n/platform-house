@@ -24,5 +24,19 @@
 			}
 		],
 		"copyright": "Copyright © 2018 All Rights Reserved"
+	},
+	"form": {
+		"title": "Kontaktný formulár",
+		"description": "Ozvi sa nám, pridaj sa k nám alebo si <strong>vyskúšaj týždeň zadarmo</strong>.",
+		"name": "Meno",
+		"surname": "Priezvisko",
+		"email": "Email",
+		"phone": "Telefón",
+		"message": "Správa",
+		"btn": {
+			"default": "ODOSLAť",
+			"success": "Ďakujeme"
+		},
+		"hint": "Formulár bol úspešne odoslaný."
 	}
 }

@@ -11,46 +11,46 @@
 			"number": "3",
 			"icon": "scaleups",
 			"title": "Scaleups",
-			"label": "3. poschodie",
-			"description": "Tretie poschodie je určené pre rýchlo-rastúcu a etablovanú spoločnosť PLATFORM. PLATFORM plánuje zdieľať s&nbsp;ostatnými členmi svoje skúsenosti ako jeden z benefitov PLATFORM House."
+			"label": "3rd floor",
+			"description": "The third floor is designed for growing and established company PLATFORM. PLATFORM plans to share its experience as one of the PLATFORM House benefits."
 		},
 		{
 			"color": "blue",
 			"number": "2",
 			"icon": "startups",
 			"title": "Startups",
-			"label": "2. poschodie",
-			"description": "Druhé poschodie je určené pre malé a&nbsp;začínajúce spoločnosti, ktoré rozumejú výhodam zdieľaných priestorov a chcú  ich využívať naplno.",
-			"btn": "Zobraziť pôdorys"
+			"label": "2nd floor",
+			"description": "The second floor is designed for small starting companies which understand, appreciate and use the benefits of shared space.",
+			"btn": "View floor plan"
 		},
 		{
 			"color": "yellow",
 			"number": "1",
 			"icon": "freelancers",
 			"title": "Freelancers",
-			"label": "1. poschodie",
-			"description": "Prvé poschodie je určené pre podnikateľov a&nbsp;kreatívcov - jednotlivcov, ktorí chcú naplno využívať moderné kancelárie, networkovať a&nbsp;zdieľať skúsenosti s rovnako rozmýšľajúcimi členmi.",
-			"btn": "Zobraziť pôdorys"
+			"label": "1st floor",
+			"description": "The first floor is designed for individual entrepreneurs and creatives who want to use smart offices, network and share experience with other like-minded people.",
+			"btn": "View floor plan"
 		}
 	],
 	"benefits": {
-		"title": "PLATFORM House nie sú kancelárie, je to životný štýl",
+		"title": "PLATFORM House It&nbsp;is&nbsp;not only about offices, it is about the lifestyle",
 		"label": "Benefits",
 		"items": [
 			{ 
 				"img": "img/img-1.jpg",
 				"size": "lg",
-				"list": [ "Unikátne priestory", "Flexibilné podmienky", "Moderná technika", "Talentovaní ľudia" ] 
+				"list": [ "Unique space", "Flexible terms", "Latests technology", "Talented people" ] 
 			},
 			{ 
 				"img": "img/img-2.jpg",
 				"size": "sm",
-				"list": [ "Chillout a oddychové zóny", "Prístup k iným úspešným podnikateľom a firmám", "Pravidelné podujatia pre rozvoj osobnosti a možnosti vzdelávania", "Reštaurácia s kvalitným a zdravým jedlom priamo v budove" ] 
+				"list": [ "Chill out and relax area", "Access to successful entrepreneurs and companies", "Regular meet ups for self-development and education", "Restaurant with fine and healthy food right in the building" ] 
 			},
 			{ 
 				"img": "img/img-3.jpg",
 				"size": "md",
-				"list": [ "Recepcia k tvojim službám", "Parkovanie pre bicykle", "Verejná doprava 3 minúty od budovy", "Vysokorýchlostný internet" ] 
+				"list": [ "Receptionist always at hand", "Bicycle parking", "transportation is 3min walk", "Highspeed internet" ] 
 			}
 		]
 	},
@@ -60,29 +60,29 @@
 			{
 				"title": "Freelancers",
 				"icon": "freelancers",
-				"description": "Staň sa členom do&nbsp;24&nbsp;hodín.",
-				"btn": "Staň sa členom",
+				"description": "Become a member in&nbsp;24&nbsp;hours.",
+				"btn": "Become a member",
 				"btnIcon": "plus",
-				"label": "a vyskúšj si týždeň zadarmo"
+				"label": "Try a free week"
 			},
 			{
 				"title": "Startups",
 				"icon": "startups",
-				"description": "Kontaktuj nás pre viac informácii o prenájme malých kancelárii.",
+				"description": "Contact us for more information on small office&nbsp;rental.",
 				"btnLink": "Send mail",
 				"btnIcon": "arrow-right"
 			},
 			{
 				"title": "Scaleups",
 				"icon": "scaleups",
-				"description": "Kontaktuj nás pre&nbsp;viac&nbso;informácii.",
+				"description": "Contact us for more&nbsp;information.",
 				"btnLink": "Hiring",
 				"btnIcon": "user"
 			}
 		]
 	},
 	"location": {
-		"title": "Vitaj v PLATFORM House, 5 km od centra",
+		"title": "Welcome to PLATFORM House, 5km from Bratislava city centre",
 		"label": "Location",
 		"link": "View Google maps"
 	},

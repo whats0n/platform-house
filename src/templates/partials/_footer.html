@@ -4,7 +4,7 @@
 		{% if footerFull %}
 			<div class="footer__top">
 				<h2 class="title-md footer__title">{{footer.title | safe}}</h2>
-				<button class="btn footer__btn">
+				<button class="btn footer__btn" data-modal-open="form">
 					{{mixins.icon('plus', 'btn__plus')}}
 					<span class="btn__title">{{footer.btn | safe}}</span>
 				</button>
