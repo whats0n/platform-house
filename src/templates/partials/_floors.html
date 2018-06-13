@@ -78,7 +78,7 @@
 					<div class="floors__item floors__item_{{item.color}} js-floors-item">
 						<div class="floors__number">{{item.number | safe}}</div>
 						<div class="floors__content">
-							<img src="{% if lang == "en" %}../{% endif %}img/{{item.icon}}.svg" alt="{{item.icon}}" class="floors__icon">
+							<img src="/img/{{item.icon}}.svg" alt="{{item.icon}}" class="floors__icon">
 							<div class="floors__header js-floors-control" data-target="figure-{{loop.index}}">
 								<div class="floors__arrow"></div>
 								<h2 class="title-md floors__title">{{item.title | safe}}</h2>

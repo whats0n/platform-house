@@ -21,7 +21,7 @@
 				<div class="testimonials__logos">
 					{% for item in testimonials.items %}
 						<a href="#" class="testimonials__logo js-testimonials-thumb" data-index="{{loop.index}}">
-							<img src="{% if lang == "en" %}../{% endif %}img/{{item.logo}}" alt="/" class="testimonials__logo-in">
+							<img src="/img/{{item.logo}}" alt="/" class="testimonials__logo-in">
 						</a>
 					{% endfor %}
 				</div>
