@@ -1,51 +1,34 @@
 <!-- begin pricing -->
 <div class="pricing" data-scrollto-container="Pricing">
 	<div class="inner pricing__inner">
-		<div class="sm-label side-label pricing__label">Pricing</div>
+		<div class="sm-label side-label pricing__label">{{pricing.label | safe}}</div>
 		<div class="pricing__items">
-			{% for item in [
-				{
-					icon: 'freelancers',
-					title: 'Freelancers',
-					description: 'Staň sa členom do&nbsp;24&nbsp;hodín.',
-					btn: 'Staň sa členom',
-					btnIcon: 'plus'
-				},
-				{
-					icon: 'startups',
-					title: 'Startups',
-					description: 'Kontaktuj nás pre viac informácii o prenájme malých kancelárii.',
-					btnLink: 'Send mail',
-					btnIcon: 'arrow-right'
-				},
-				{
-					icon: 'scaleups',
-					title: 'Scaleups',
-					description: 'Kontaktuj nás pre&nbsp;viac&nbsp;informácii.',
-					btnLink: 'Hiring',
-					btnIcon: 'user'
-				}
-			] %}
+			{% for item in pricing.items %}
 				<div class="pricing__item">
 					<div class="item">
 						<div class="item__figure">
-							<img src="img/{{item.icon}}.svg" alt="{{item.icon}}" class="item__icon">
+							<img src="{% if lang == "en" %}../{% endif %}img/{{item.icon}}.svg" alt="{{item.icon}}" class="item__icon">
 						</div>
-						<h3 class="title-sm item__title">{{item.title}}</h3>
+						<h3 class="title-sm item__title">{{item.title | safe}}</h3>
 						<div class="text-lg item__description">
 							<p>{{item.description | safe}}</p>
 						</div>
-						{% if item.btn %}
-							<button class="btn btn_lg item__btn">
-								{{mixins.icon(item.btnIcon, 'btn__plus')}}
-								<span class="btn__title">{{item.btn}}</span>
-							</button>
-						{% elif item.btnLink %}
-							<button class="btn-link btn-link_lg">
-								{{mixins.icon(item.btnIcon, 'btn-link__icon btn-link__' + item.btnIcon)}}
-								<span class="btn-link__title">{{item.btnLink}}</span>
-							</button>
-						{% endif %}
+						<div class="item__footer">
+							{% if item.btn %}
+								<button class="btn btn_lg item__btn">
+									{{mixins.icon(item.btnIcon, 'btn__plus')}}
+									<span class="btn__title">{{item.btn | safe}}</span>
+								</button>
+							{% elif item.btnLink %}
+								<button class="btn-link btn-link_lg">
+									{{mixins.icon(item.btnIcon, 'btn-link__icon btn-link__' + item.btnIcon)}}
+									<span class="btn-link__title">{{item.btnLink | safe}}</span>
+								</button>
+							{% endif %}
+							{% if item.label %}
+								<div class="item__label">{{item.label | safe}}</div>
+							{% endif %}
+						</div>
 					</div>
 				</div>
 			{% endfor %}

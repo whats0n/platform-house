@@ -3,21 +3,21 @@
 	<div class="footer__inner">
 		{% if footerFull %}
 			<div class="footer__top">
-				<h2 class="title-md footer__title">Zaujali sme ťa? Pridaj sa k nám.</h2>
+				<h2 class="title-md footer__title">{{footer.title | safe}}</h2>
 				<button class="btn footer__btn">
 					{{mixins.icon('plus', 'btn__plus')}}
-					<span class="btn__title">Staň sa členom</span>
+					<span class="btn__title">{{footer.btn | safe}}</span>
 				</button>
-				<div class="footer__label">a vyskúšj si týždeň zadarmo</div>
+				<div class="footer__label">{{footer.label | safe}}</div>
 			</div>
 		{% endif %}
 		<div class="footer__main">
 			<div class="footer__contacts">
 				<div>
-					<a href="mailto:info@platformhouse.com" class="footer__mail">info@platformhouse.com</a>
+					<a href="mailto:{{footer.email | safe}}" class="footer__mail">{{footer.email | safe}}</a>
 				</div>
 				<div>
-					<a href="tel:+4210903333333" class="footer__phone">+421 (0) 903 333 333</a>
+					<a href="tel:{{footer.link | safe}}" class="footer__phone">{{footer.phone.title | safe}}</a>
 				</div>
 				<div class="footer__social">
 					<a href="#" class="footer__social-item">
@@ -30,9 +30,9 @@
 			</div>
 			<div class="footer__right">
 				<ul class="footer__nav">
-					{% for item in [ 'Benefits', 'Pricing', 'Location' ] %}
+					{% for item in footer.nav %}
 						<li class="footer__item">
-							<a href="#" class="footer__link" data-scrollto-control="{{item}}">{{item}}</a>
+							<a href="#" class="footer__link" data-scrollto-control="{{item.section}}">{{item.title}}</a>
 						</li>
 					{% endfor %}
 				</ul>
@@ -44,7 +44,7 @@
 							<div class="logo__line">HOUSE</div>
 						</div>
 					</a>
-					<div class="footer__copy">Copyright © 2018 All Rights Reserved</div>
+					<div class="footer__copy">{{footer.copyright | safe}}</div>
 				</div>
 			</div>
 		</div>

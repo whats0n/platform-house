@@ -15,7 +15,7 @@ if (container.length) {
 
   map.on('load', function() {
     /* Image: An image is loaded and added to the map. */
-    map.loadImage('img/marker.png', function(error, image) {
+    map.loadImage('/img/marker.png', function(error, image) {
       if (error) throw error;
       map.addImage('custom-marker', image);
       /* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */

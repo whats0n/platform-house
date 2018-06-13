@@ -1,10 +1,19 @@
 .page	
-	position: relative
-	padding: 200px 240px 0
-	+lg 
-		padding: 100px 90px 0
-	+md 
-		padding: 164px 0 0
+	position: fixed
+	z-index: 1000
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	overflow: auto
+	background: #f7f7f8
+	&__inner
+		position: relative
+		padding: 200px 240px 220px
+		+lg 
+			padding: 100px 90px
+		+md 
+			padding: 164px 0 0
 	&__container
 		margin: 0 auto
 		max-width: 960px
@@ -12,10 +21,10 @@
 			max-width: 900px
 		+md 
 			max-width: 720px
-	&__form
-		margin-bottom: -80px
-		+sm 
-			margin-bottom: 0
+	// &__form
+	// 	margin-bottom: -80px
+	// 	+sm 
+			// margin-bottom: 0
 	&__back
 		position: absolute
 		top: 40px

@@ -1,13 +1,13 @@
 <!-- begin hero -->
 <div class="hero">
 	<div class="hero__bg">
-		<div class="hero__bg-left" style="background-image: url(img/hero-left.jpg);"></div>
-		<div class="hero__bg-right" style="background-image: url(img/hero-right.jpg);"></div>
+		<div class="hero__bg-left" style="background-image: url({% if lang == "en" %}../{% endif %}img/hero-left.jpg);"></div>
+		<div class="hero__bg-right" style="background-image: url({% if lang == "en" %}../{% endif %}img/hero-right.jpg);"></div>
 	</div>
 	<div class="inner hero__inner">
 		<div class="hero__lang">
-			<a href="#" class="hero__lang-item is-active">Sk</a>
-			<a href="#" class="hero__lang-item">En</a>
+			<a href="#" class="hero__lang-item {% if lang == "sk" %}is-active{% endif %}">Sk</a>
+			<a href="#" class="hero__lang-item {% if lang == "en" %}is-active{% endif %}">En</a>
 		</div>
 		<div class="hero__figure">
 			<div class="hero__figure-shadow"></div>
@@ -15,17 +15,17 @@
 		</div>
 		<div class="hero__content">
 			<div class="hero__content-in">
-				<h1 class="title-lg hero__title">Zdieľané priestory pre kreatívcov</h1>
+				<h1 class="title-lg hero__title">{{hero.title | safe}}</h1>
 				<div class="text-xl hero__description">
-					<p>Nech už potrebuješ pracovný stôl alebo malú kanceláriu, môžeš ju mať do 24 hodín.</p>
+					<p>{{hero.description | safe}}</p>
 				</div>
 			</div>
 			<div class="hero__footer">
 				<button class="btn hero__btn">
 					{{mixins.icon('plus', 'btn__plus')}}
-					<span class="btn__title">Staň sa členom</span>
+					<span class="btn__title">{{hero.btn | safe}}</span>
 				</button>
-				<div class="hero__label">a vyskúšj si týždeň zadarmo</div>
+				<div class="hero__label">{{hero.label | safe}}</div>
 			</div>
 		</div>
 	</div>

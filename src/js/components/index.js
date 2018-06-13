@@ -6,3 +6,4 @@ import './testimonials';
 import './floors';
 import './field';
 import './validate';
+import './form';

@@ -1,5 +1,5 @@
 import 'jquery-form-validator';
-import {ERROR} from '../constants';
+import {ERROR, VALID} from '../constants';
 
 $('.js-validate').each((i, form) => {
   $.validate({
@@ -13,6 +13,16 @@ $('.js-validate').each((i, form) => {
     onElementValidate(valid, control) {
       const field = control.closest('.js-validate-field');
       !valid ? field.addClass(ERROR) : field.removeClass(ERROR);
+    },
+    onError($form) {
+      $form.removeClass(VALID);
+      console.log('error');
+    },
+    onSuccess($form) {
+      $form.addClass(VALID);
+      console.log('valid');
     }
   });
+
+  $(form).submit(e => e.preventDefault());
 });

@@ -1,5 +1,5 @@
 {% macro icon(i, classList) %}
-<svg class="icon icon-{{i}} {{classList}}"><use xlink:href="img/sprite.svg#icon-{{i}}"></use></svg>
+<svg class="icon icon-{{i}} {{classList}}"><use xlink:href="/img/sprite.svg#icon-{{i}}"></use></svg>
 {% endmacro %}
 
 {% macro field(props) %}
@@ -17,7 +17,7 @@
 				</select>
 			</div>
 		{% elif props.textarea %}
-			<textarea class="field__input js-field-textarea {{props.inputClassList}}" {{props.inputAttrs | safe}} autocomplete="off"></textarea>
+			<textarea class="field__input field__textarea js-field-textarea {{props.inputClassList}}" {{props.inputAttrs | safe}} autocomplete="off"></textarea>
 		{% else %}
 			<input type="{{props.type or 'text'}}" class="field__input js-field-input {{props.inputClassList}}" {{props.inputAttrs | safe}} autocomplete="off">
 		{% endif %}

@@ -45,14 +45,16 @@
 		appearance: none
 	&__input
 		display: block
-		padding: 21px 10px 20px
-		border: none
-		resize: none
+		padding: 0 10px
 		+f(null, 600, normal)
 		&:-webkit-autofill
 			-webkit-box-shadow: inset 0 0 0px 1000px $white
 			&:hover 
 				-webkit-box-shadow: inset 0 0 0px 1000px $white
+	&__textarea
+		border: none
+		resize: none
+		padding: 21px 40px 20px 10px
 	&__placeholder
 		position: absolute
 		z-index: 10

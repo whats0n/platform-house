@@ -7,6 +7,21 @@
 		padding: 0 90px 80px
 	+sm 
 		padding: 0 25px 60px
+	&.is-valid
+		.form
+			&__submit
+				+hover 
+					&:after
+						background: $lightGreen
+				&:after
+					background: $green
+				&-hidden 
+					display: inline-block
+				&-visible
+					display: none
+			&__hint 
+				opacity: 1
+				visibility: visible
 	&__title
 		float: left
 		margin: -40px 0 60px
@@ -26,6 +41,7 @@
 		+xs 
 			margin-bottom: 25px
 	&__footer
+		position: relative
 		+sm 
 			margin: 0 auto
 			max-width: 400px
@@ -47,6 +63,18 @@
 			width: 50%
 			+xs
 				width: 100%
+	&__submit-hidden
+		display: none
+	&__hint 
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		padding-top: 13px
+		opacity: 0
+		visibility: hidden
+		text-align: center
+		transition: opacity 0.3s, visibility 0.3s
 	&__figure
 		position: absolute
 		z-index: 10
@@ -55,11 +83,12 @@
 		width: 1.5em
 		height: 1em
 		font-size: 200px
-		transform: translate3d(100%, -31px, 0)
+		// transform: translate3d(100%, -31px, 0)
+		transform: translate3d(100%, 55px, 0)
 		+lg
-			right: 80px
 			bottom: 20px
-			font-size: 14vw
+			font-size: 12vw
+			transform: translate3d(100%, 30%, 0)
 		+md 
 			display: none
 	&__figure-container,

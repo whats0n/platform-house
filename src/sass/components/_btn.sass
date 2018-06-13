@@ -14,7 +14,46 @@
 	+hover
 		&:after
 			background: $lightRed
-			transform: scale(1.12)
+			// transform: scale(1.12)
+			top: -3px
+			left: -3px
+			right: -3px
+			bottom: -3px
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		border-radius: 4px
+		background: $red
+		// transition: background 0.3s, transform 0.3s
+		+gpu
+		transition: top 0.3s, left 0.3s, right 0.3s, bottom 0.3s, background 0.3s
+	&__plus,
+	&__title,
+	&__check
+		position: relative
+		z-index: 1
+		display: inline-block
+		vertical-align: middle
+	&__plus
+		margin-right: 15px
+		font-size: 12px
+		+md
+			margin-right: 10px 
+			font-size: 10px
+	&__check 
+		margin-right: 10px
+		fill: $white
+		font-size: 14px
+	&__title
+		font-family: $familySecondary
+		+f(14px, 700, 18px)
+		text-transform: uppercase
+	
+	//modifications
 	&_lg 
 		height: 60px
 		+lg 
@@ -40,32 +79,3 @@
 			+f(18px, 700, 23px)
 	&_wide
 		width: 100%
-	&:after
-		content: ''
-		position: absolute
-		top: 0
-		left: 0
-		right: 0
-		bottom: 0
-		border-radius: 4px
-		background: $red
-		transition: background 0.3s, transform 0.3s
-	&__plus,
-	&__title
-		position: relative
-		z-index: 1
-		display: inline-block
-		vertical-align: middle
-	&__plus
-		margin-right: 15px
-		font-size: 12px
-		+md
-			margin-right: 10px 
-			font-size: 10px
-	&__title
-		font-family: $familySecondary
-		+f(14px, 700, 18px)
-		text-transform: uppercase
-		// +sm
-		// 	+f(16px, 500, 19px)
-		// 	text-transform: none

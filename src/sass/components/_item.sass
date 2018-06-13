@@ -1,5 +1,5 @@
 .item
-	padding: 60px 60px 40px
+	padding: 60px 60px 77px
 	background: $white
 	box-shadow: 0 8px 16px 0 rgba($black,.05)
 	+lg 
@@ -23,7 +23,7 @@
 			margin-bottom: 5px
 	&__description
 		overflow: hidden
-		margin-bottom: 50px
+		margin-bottom: 33px
 		max-width: 200px
 		height: 3em * 1.445
 		opacity: 0.5
@@ -31,3 +31,17 @@
 		+xs 
 			margin-bottom: 40px
 			height: auto
+	&__footer
+		position: relative
+		display: inline-block
+		vertical-align: top
+	&__label
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		padding-top: 10px
+		color: $dark
+		opacity: 0.4
+		+f(14px, 600, 17px)
+		text-align: center

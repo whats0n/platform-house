@@ -125,18 +125,19 @@
 			&.is-active
 				opacity: 1
 			+hover
-				&:before
-					transform: scaleX(1)
-			&:before
-				content: ''
-				position: absolute
-				left: 5px
-				right: 5px
-				bottom: 5px
-				border-bottom: 2px solid $dark
-				transform: scaleX(0)
-				transform-origin: left center
-				transition: transform 0.4s
+				opacity: 1
+			// 	&:before
+			// 		transform: scaleX(1)
+			// &:before
+			// 	content: ''
+			// 	position: absolute
+			// 	left: 5px
+			// 	right: 5px
+			// 	bottom: 5px
+			// 	border-bottom: 2px solid $dark
+			// 	transform: scaleX(0)
+			// 	transform-origin: left center
+			// 	transition: transform 0.4s
 	&__label
 		margin-top: 10px
 		opacity: 0.4

@@ -1,0 +1,124 @@
+{
+	"hero": {
+		"title": "Zdieľané priestory pre kreatívcov",
+		"description": "Nech už potrebuješ pracovný stôl alebo malú kanceláriu, môžeš ju mať do 24 hodín.",
+		"btn": "Staň sa členom",
+		"label": "a vyskúšj si týždeň zadarmo"
+	},
+	"floors": [
+		{
+			"color": "red",
+			"number": "3",
+			"icon": "scaleups",
+			"title": "Scaleups",
+			"label": "3. poschodie",
+			"description": "Tretie poschodie je určené pre rýchlo-rastúcu a etablovanú spoločnosť PLATFORM. PLATFORM plánuje zdieľať s&nbsp;ostatnými členmi svoje skúsenosti ako jeden z benefitov PLATFORM House."
+		},
+		{
+			"color": "blue",
+			"number": "2",
+			"icon": "startups",
+			"title": "Startups",
+			"label": "2. poschodie",
+			"description": "Druhé poschodie je určené pre malé a&nbsp;začínajúce spoločnosti, ktoré rozumejú výhodam zdieľaných priestorov a chcú  ich využívať naplno.",
+			"btn": "Zobraziť pôdorys"
+		},
+		{
+			"color": "yellow",
+			"number": "1",
+			"icon": "freelancers",
+			"title": "Freelancers",
+			"label": "1. poschodie",
+			"description": "Prvé poschodie je určené pre podnikateľov a&nbsp;kreatívcov - jednotlivcov, ktorí chcú naplno využívať moderné kancelárie, networkovať a&nbsp;zdieľať skúsenosti s rovnako rozmýšľajúcimi členmi.",
+			"btn": "Zobraziť pôdorys"
+		}
+	],
+	"benefits": {
+		"title": "PLATFORM House nie sú kancelárie, je to životný štýl",
+		"label": "Benefits",
+		"items": [
+			{ 
+				"img": "img/img-1.jpg",
+				"size": "lg",
+				"list": [ "Unikátne priestory", "Flexibilné podmienky", "Moderná technika", "Talentovaní ľudia" ] 
+			},
+			{ 
+				"img": "img/img-2.jpg",
+				"size": "sm",
+				"list": [ "Chillout a oddychové zóny", "Prístup k iným úspešným podnikateľom a firmám", "Pravidelné podujatia pre rozvoj osobnosti a možnosti vzdelávania", "Reštaurácia s kvalitným a zdravým jedlom priamo v budove" ] 
+			},
+			{ 
+				"img": "img/img-3.jpg",
+				"size": "md",
+				"list": [ "Recepcia k tvojim službám", "Parkovanie pre bicykle", "Verejná doprava 3 minúty od budovy", "Vysokorýchlostný internet" ] 
+			}
+		]
+	},
+	"pricing": {
+		"label": "Pricing",
+		"items": [
+			{
+				"title": "Freelancers",
+				"icon": "freelancers",
+				"description": "Staň sa členom do&nbsp;24&nbsp;hodín.",
+				"btn": "Staň sa členom",
+				"btnIcon": "plus",
+				"label": "a vyskúšj si týždeň zadarmo"
+			},
+			{
+				"title": "Startups",
+				"icon": "startups",
+				"description": "Kontaktuj nás pre viac informácii o prenájme malých kancelárii.",
+				"btnLink": "Send mail",
+				"btnIcon": "arrow-right"
+			},
+			{
+				"title": "Scaleups",
+				"icon": "scaleups",
+				"description": "Kontaktuj nás pre&nbsp;viac&nbso;informácii.",
+				"btnLink": "Hiring",
+				"btnIcon": "user"
+			}
+		]
+	},
+	"location": {
+		"title": "Vitaj v PLATFORM House, 5 km od centra",
+		"label": "Location",
+		"link": "View Google maps"
+	},
+	"testimonials": {
+		"label": "Testimonials",
+		"items": [
+			{
+				"logo": "platform.svg",
+				"title": "V Plat4m House najviac oceňujem ľahko prístupné vybavenie a komunitu zaujímavých ľudí online aj priamo na mieste, s ktorými si môžeme pomáhať.",
+				"img": "https://placecage.com/1000/1000",
+				"profile": {
+					"img": "https://placecage.com/1000/1000",
+					"title": "Lukas Horak",
+					"subtitle": "CEO at PLATFORM"
+				}
+			},
+			{
+				"logo": "wework.png",
+				"title": "V Plat4m House najviac oceňujem ľahko prístupné vybavenie a komunitu zaujímavých ľudí online aj priamo na mieste, s ktorými si môžeme pomáhať.",
+				"img": "https://placecage.com/2000/2000",
+				"profile": {
+					"img": "https://placecage.com/2000/2000",
+					"title": "Lukas Horak",
+					"subtitle": "CEO at PLATFORM"
+				}
+			},
+			{
+				"logo": "google.png",
+				"title": "V Plat4m House najviac oceňujem ľahko prístupné vybavenie a komunitu zaujímavých ľudí online aj priamo na mieste, s ktorými si môžeme pomáhať.",
+				"img": "https://placecage.com/3000/3000",
+				"profile": {
+					"img": "https://placecage.com/3000/3000",
+					"title": "Lukas Horak",
+					"subtitle": "CEO at PLATFORM"
+				}
+			}
+		]
+	}
+}
