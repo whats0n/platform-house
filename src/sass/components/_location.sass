@@ -21,11 +21,16 @@ $end:  #f7f7f8 70%
 		left: 0
 		right: 0
 		bottom: 0
-		background: -moz-radial-gradient(center, ellipse cover, $start, $end)
-		background: -webkit-radial-gradient(center, ellipse cover, $start, $end)
-		background: -o-radial-gradient(center, ellipse cover, $start, $end)
-		background: -ms-radial-gradient(center, ellipse cover, $start, $end)
-		background: radial-gradient(ellipse at center, $start, $end)
+		background: -moz-radial-gradient(center, ellipse cover, $start, rgba($white, 0) 40%, $end)
+		background: -webkit-radial-gradient(center, ellipse cover, $start, rgba($white, 0) 40%, $end)
+		background: -o-radial-gradient(center, ellipse cover, $start, rgba($white, 0) 40%, $end)
+		background: -ms-radial-gradient(center, ellipse cover, $start, rgba($white, 0) 40%, $end)
+		background: radial-gradient(ellipse at center, $start, rgba($white, 0) 40%, $end)
+		// background: -moz-radial-gradient(center, ellipse cover, $start, $end)
+		// background: -webkit-radial-gradient(center, ellipse cover, $start, $end)
+		// background: -o-radial-gradient(center, ellipse cover, $start, $end)
+		// background: -ms-radial-gradient(center, ellipse cover, $start, $end)
+		// background: radial-gradient(ellipse at center, $start, $end)
 		pointer-events: none
 		+md 
 			background: linear-gradient(to bottom, #f7f7f8 0%, rgba($white, 0) 30%)
