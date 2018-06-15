@@ -7,7 +7,7 @@ if (container.length) {
   const map = new mapboxgl.Map({
 	  container: container.get(0),
 	  style: 'mapbox://styles/mapbox/light-v9',
-	  center: [17.1249159,48.1715165],
+	  center: [17.1259159,48.1715165],
 	  zoom: 16
   });
 
@@ -21,7 +21,6 @@ if (container.length) {
       map.addLayer({
         id: 'main-marker',
         type: 'symbol',
-        /* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
         source: {
           type: 'geojson',
           data: {
@@ -34,43 +33,39 @@ if (container.length) {
       });
 
       map.style.stylesheet.layers.forEach(function(layer) {
-        if (layer.type === 'symbol') {
+        if (layer.type === 'symbol' && layer.id !== 'road-label-medium') {
           map.removeLayer(layer.id);
         }
       });
     });
-
     map.loadImage('/img/bus-marker.png', function(error, image) {
       if (error) throw error;
       map.addImage('bus-marker', image);
       map.addLayer({
         id: 'bus-marker',
         type: 'symbol',
-        /* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
         source: {
           type: 'geojson',
           data: {
             type: 'FeatureCollection',
-            features:[{'type':'Feature','geometry':{'type':'Point','coordinates':['17.1259271','48.1725425']}}]}
+            features:[{'type':'Feature','geometry':{'type':'Point','coordinates':['17.12591904616594','48.172530001425635']}}]}
         },
         layout: {
           'icon-image': 'bus-marker',
         }
       });
     });
-
     map.loadImage('/img/bus-train-marker.png', function(error, image) {
       if (error) throw error;
       map.addImage('bus-train-marker', image);
       map.addLayer({
         id: 'bus-train-marker',
         type: 'symbol',
-        /* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
         source: {
           type: 'geojson',
           data: {
             type: 'FeatureCollection',
-            features:[{'type':'Feature','geometry':{'type':'Point','coordinates':['17.1272829','48.1736886']}}]}
+            features:[{'type':'Feature','geometry':{'type':'Point','coordinates':['17.127354163345604','48.17381740389636']}}]}
         },
         layout: {
           'icon-image': 'bus-train-marker',
@@ -81,17 +76,15 @@ if (container.length) {
     map.loadImage('/img/default-marker.png', function(error, image) {
       if (error) throw error;
       map.addImage('default-marker', image);
-
-      [ 
-        { coordinates: ['17.1274500','48.1725500'] },
-        { coordinates: ['17.1267500','48.1703000'] },
-        { coordinates: ['17.1244000','48.1726000'] },
-        { coordinates: ['17.1293250','48.1700689'] }
+      [
+        { coordinates: ['17.126952943553203','48.17420238465326'] },
+        { coordinates: ['17.12730847497859','48.17118416701758'] },
+        { coordinates: ['17.127341821113113','48.170784948075394'] },
+        { coordinates: ['17.130357315745226','48.16976917808667'] }
       ].forEach((marker, i) => {
         map.addLayer({
           id: `default-marker-${i}`,
           type: 'symbol',
-          /* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
           source: {
             type: 'geojson',
             data: {

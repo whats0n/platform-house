@@ -18,7 +18,7 @@
 							{ placeholder: form.name, inputAttrs: 'data-validation="required"', classList: 'js-validate-field', inputClassList: 'js-validate-control' },
 							{ placeholder: form.surname, inputAttrs: 'data-validation="required"', classList: 'js-validate-field', inputClassList: 'js-validate-control' },
 							{ placeholder: form.email, inputAttrs: 'data-validation="email"', classList: 'js-validate-field', inputClassList: 'js-validate-control' },
-							{ placeholder: form.phone, inputAttrs: 'data-validation="required"', classList: 'js-validate-field', inputClassList: 'js-validate-control js-input-phone' }
+							{ placeholder: form.phone, inputAttrs: 'data-validation="required"', type: "number", classList: 'js-validate-field', inputClassList: 'js-validate-control js-input-phone' }
 						] %}
 							<div class="form__field form__field_50">
 								{{mixins.field(item)}}
