@@ -25,7 +25,7 @@
 			"modal": {
 				"target": "startups",
 				"title": "Startups",
-				"label": "3. poschodie",
+				"label": "2. poschodie",
 				"img": "img/floor-startups.svg"
 			}
 		},
@@ -41,7 +41,7 @@
 			"modal": {
 				"target": "freelancers",
 				"title": "Freelancers",
-				"label": "3. poschodie",
+				"label": "1. poschodie",
 				"img": "img/floor-freelancers.svg"
 			}
 		}
@@ -103,16 +103,6 @@
 		"label": "Testimonials",
 		"items": [
 			{
-				"logo": "platform.svg",
-				"title": "V Plat4m House najviac oceňujem ľahko prístupné vybavenie a komunitu zaujímavých ľudí online aj priamo na mieste, s ktorými si môžeme pomáhať.",
-				"img": "/img/img-4.jpg",
-				"profile": {
-					"img": "/img/img-4-mini.jpg",
-					"title": "Lukas Horak",
-					"subtitle": "CEO at PLATFORM"
-				}
-			},
-			{
 				"logo": "wework.png",
 				"title": "Najväčší benefit PLATFORM HOUSE vidím v spojení zabehnutej digitálnej agentúry PLATFORM so startupmi a freelancermi. Agentúry v PLATFORM HOUSE môžu využiť služby freelancerov, ktorí sa nachádzajú v jednej budove.",
 				"img": "/img/adrian.png",
@@ -125,7 +115,7 @@
 			{
 				"logo": "google.png",
 				"title": "Teším sa na koncept, ktorý sa momentálne spúšťa a ktorý prináša prepojenie spoločnosti PLATFORM s mladými firmami ako aj s freelancermi.",
-				"img": "/img/stano.jpg",
+				"img": "/img/stano-lg.jpg",
 				"profile": {
 					"img": "/img/stano.jpg",
 					"title": "Stano",

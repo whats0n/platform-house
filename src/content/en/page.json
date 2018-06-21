@@ -40,7 +40,7 @@
 			"modal": {
 				"target": "freelancers",
 				"title": "Freelancers",
-				"label": "3. floor",
+				"label": "1. floor",
 				"img": "img/floor-freelancers.svg"
 			}
 		}
@@ -102,16 +102,6 @@
 		"label": "Testimonials",
 		"items": [
 			{
-				"logo": "platform.svg",
-				"title": "V Plat4m House najviac oceňujem ľahko prístupné vybavenie a komunitu zaujímavých ľudí online aj priamo na mieste, s ktorými si môžeme pomáhať.",
-				"img": "/img/img-4.jpg",
-				"profile": {
-					"img": "/img/img-4-mini.jpg",
-					"title": "Lukas Horak",
-					"subtitle": "CEO at PLATFORM"
-				}
-			},
-			{
 				"logo": "wework.png",
 				"title": "The greatest benefit of PLATFORM HOUSE in my eyes is merging of PLATFORM - a renowned digital agency with startups and freelancers. The agencies within PLATFORM HOUSE can involve freelancers working in the same building into their own projects.",
 				"img": "/img/adrian.png",
@@ -124,7 +114,7 @@
 			{
 				"logo": "google.png",
 				"title": "I am looking forward to the concept that’s being put into practise and brings vivid interaction between PLATFORM and young companies as well as freelancers.",
-				"img": "/img/stano.jpg",
+				"img": "/img/stano-lg.jpg",
 				"profile": {
 					"img": "/img/stano.jpg",
 					"title": "Stano",
