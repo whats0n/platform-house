@@ -1,0 +1,18 @@
+{% for item in floors %}
+	{% if item.modal %}
+		<!-- begin modal -->
+		<div class="modal" data-modal="{{item.modal.target}}" data-modal-esc>
+			<div class="modal__container" data-modal-prevent>
+				<a href="#" class="modal__close" data-modal-close="{{item.modal.target}}">
+					{{mixins.icon('close', 'modal__close-icon')}}
+				</a>
+				<div class="modal__header">
+					<h2 class="title-md modal__title">{{item.modal.title | safe}}</h2>
+					<div class="modal__label">{{item.modal.label | safe}}</div>
+				</div>
+				<img src="/{{item.modal.img}}" alt="{{item.modal.title}}" class="modal__img">
+			</div>
+		</div>
+		<!-- end modal -->
+	{% endif %}
+{% endfor %}

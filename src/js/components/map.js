@@ -1,4 +1,6 @@
 import mapboxgl from 'mapbox-gl';
+import {touchDetect} from '../constants';
+
 const container = $('.js-map');
 
 if (container.length) {
@@ -33,12 +35,17 @@ if (container.length) {
       });
 
       map.style.stylesheet.layers.forEach(function(layer) {
-        if (layer.type === 'symbol' && layer.id !== 'road-label-medium') {
+        if (layer.type === 'symbol') {
+          if (layer.id === 'road-label-medium') {
+            touchDetect && map.removeLayer(layer.id);
+            return;
+          };
+          if (touchDetect && layer.id === 'road-label-large') return;
           map.removeLayer(layer.id);
         }
       });
     });
-    map.loadImage('/img/bus-marker.png', function(error, image) {
+    !touchDetect && map.loadImage('/img/bus-marker.png', function(error, image) {
       if (error) throw error;
       map.addImage('bus-marker', image);
       map.addLayer({

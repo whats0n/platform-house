@@ -21,7 +21,13 @@
 			"title": "Startups",
 			"label": "2. poschodie",
 			"description": "Druhé poschodie je určené pre malé a&nbsp;začínajúce spoločnosti, ktoré rozumejú výhodam zdieľaných priestorov a chcú  ich využívať naplno.",
-			"btn": "Zobraziť pôdorys"
+			"btn": "Zobraziť pôdorys",
+			"modal": {
+				"target": "startups",
+				"title": "Startups",
+				"label": "3. poschodie",
+				"img": "img/floor-startups.svg"
+			}
 		},
 		{
 			"color": "yellow",
@@ -30,7 +36,14 @@
 			"title": "Freelancers",
 			"label": "1. poschodie",
 			"description": "Prvé poschodie je určené pre podnikateľov a&nbsp;kreatívcov - jednotlivcov, ktorí chcú naplno využívať moderné kancelárie, networkovať a&nbsp;zdieľať skúsenosti s rovnako rozmýšľajúcimi členmi.",
-			"btn": "Zobraziť pôdorys"
+			"btn": "Zobraziť pôdorys",
+			"modal": "freelancers",
+			"modal": {
+				"target": "freelancers",
+				"title": "Freelancers",
+				"label": "3. poschodie",
+				"img": "img/floor-freelancers.svg"
+			}
 		}
 	],
 	"benefits": {
@@ -92,30 +105,30 @@
 			{
 				"logo": "platform.svg",
 				"title": "V Plat4m House najviac oceňujem ľahko prístupné vybavenie a komunitu zaujímavých ľudí online aj priamo na mieste, s ktorými si môžeme pomáhať.",
-				"img": "https://placecage.com/1000/1000",
+				"img": "/img/img-4.jpg",
 				"profile": {
-					"img": "https://placecage.com/1000/1000",
+					"img": "/img/img-4-mini.jpg",
 					"title": "Lukas Horak",
 					"subtitle": "CEO at PLATFORM"
 				}
 			},
 			{
 				"logo": "wework.png",
-				"title": "V Plat4m House najviac oceňujem ľahko prístupné vybavenie a komunitu zaujímavých ľudí online aj priamo na mieste, s ktorými si môžeme pomáhať.",
-				"img": "https://placecage.com/2000/2000",
+				"title": "Najväčší benefit PLATFORM HOUSE vidím v spojení zabehnutej digitálnej agentúry PLATFORM so startupmi a freelancermi. Agentúry v PLATFORM HOUSE môžu využiť služby freelancerov, ktorí sa nachádzajú v jednej budove.",
+				"img": "/img/adrian.png",
 				"profile": {
-					"img": "https://placecage.com/2000/2000",
-					"title": "Lukas Horak",
+					"img": "/img/adrian.png",
+					"title": "Adrian",
 					"subtitle": "CEO at PLATFORM"
 				}
 			},
 			{
 				"logo": "google.png",
-				"title": "V Plat4m House najviac oceňujem ľahko prístupné vybavenie a komunitu zaujímavých ľudí online aj priamo na mieste, s ktorými si môžeme pomáhať.",
-				"img": "https://placecage.com/3000/3000",
+				"title": "Teším sa na koncept, ktorý sa momentálne spúšťa a ktorý prináša prepojenie spoločnosti PLATFORM s mladými firmami ako aj s freelancermi.",
+				"img": "/img/stano.jpg",
 				"profile": {
-					"img": "https://placecage.com/3000/3000",
-					"title": "Lukas Horak",
+					"img": "/img/stano.jpg",
+					"title": "Stano",
 					"subtitle": "CEO at PLATFORM"
 				}
 			}

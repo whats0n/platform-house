@@ -1,5 +1,5 @@
 <!-- begin page -->
-<div class="page" data-modal="form">
+<div class="page" data-modal="form" data-modal-prevent>
 	<div class="page__inner">
 		<a href="#" class="page__back" data-modal-close="form">
 			{{mixins.icon('arrow-left', 'page__back-icon')}}
@@ -8,9 +8,9 @@
 			<form action="/" class="form page__form js-validate">
 				<div class="form__header">
 					<div class="title-lg form__title">{{form.title | safe}}</div>
-					<div class="form__description">
-						<p>{{form.description | safe}}</p>
-					</div>
+				</div>
+				<div class="form__description">
+					<p>{{form.description | safe}}</p>
 				</div>
 				<div class="form__body">
 					<div class="form__field-group">

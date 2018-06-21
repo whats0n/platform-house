@@ -42,4 +42,15 @@ $('[data-modal-close]').click(e => {
   hide($(e.currentTarget).data('modal-close'));
 });
 
+modals.on('click', e => {
+  if ($(e.target).closest('[data-modal-prevent]').length) return;
+  hide($(e.currentTarget).data('modal'));
+});
+
+$(document).on('keyup', e => {
+  if (modals.filter('[data-modal-esc]').hasClass(OPEN) && e.keyCode === 27) {
+    hide(modals.filter(`.${OPEN}`).data('modal'));
+  }
+});
+
 export default { hide, show };

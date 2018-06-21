@@ -8,7 +8,7 @@
 		position: relative
 		z-index: 2
 		float: right
-		padding: 240px 180px 180px
+		padding: 240px 180px 220px
 		width: 66.66%
 		background: $white
 		box-shadow: 0 8px 16px 0 rgba($black,.05)
@@ -36,10 +36,6 @@
 			position: relative
 			top: auto
 			left: auto
-	&__slider
-		margin-bottom: 153px
-		+md 
-			margin-bottom: 72px
 	&__text
 		margin-bottom: 30px
 		font-family: $familySecondary
@@ -83,3 +79,18 @@
 		transition: opacity 0.3s
 		&.is-active
 			opacity: 1
+	&__nav 
+		padding-top: 158px
+		margin: -20px
+		font-size: 0
+	&__arrow
+		padding: 20px
+		font-size: 0
+		opacity: 0.2
+		background: none
+		transition: opacity 0.3s
+		+hover
+			opacity: 1
+		svg 
+			width: 53px
+			height: 14px

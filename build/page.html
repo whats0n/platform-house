@@ -29,8 +29,8 @@
       <!-- begin hero -->
       <div class="hero">
         <div class="hero__bg">
-          <div class="hero__bg-left" style="background-image: url(/img/hero-left.jpg);"></div>
-          <div class="hero__bg-right" style="background-image: url(/img/hero-right.jpg);"></div>
+          <div class="hero__bg-left" style="background-image: url(/img/hero.jpg);"></div>
+          <div class="hero__bg-right" style="background-image: url(/img/hero.jpg);"></div>
         </div>
         <div class="inner hero__inner">
           <div class="hero__lang">
@@ -147,7 +147,7 @@
                   </div>
                   <div class="floors__body js-floors-container">
                     <div class="floors__description text-lg">Druhé poschodie je určené pre malé a&nbsp;začínajúce spoločnosti, ktoré rozumejú výhodam zdieľaných priestorov a chcú ich využívať naplno.</div>
-                    <a href="#" class="btn-link floors__btn-link">
+                    <a href="#" class="btn-link floors__btn-link" data-modal-open="startups">
                       <svg class="icon icon-arrow-right btn-link__icon btn-link__arrow-right">
                         <use xlink:href="/img/sprite.svg#icon-arrow-right"></use>
                       </svg>
@@ -167,7 +167,8 @@
                   </div>
                   <div class="floors__body js-floors-container">
                     <div class="floors__description text-lg">Prvé poschodie je určené pre podnikateľov a&nbsp;kreatívcov - jednotlivcov, ktorí chcú naplno využívať moderné kancelárie, networkovať a&nbsp;zdieľať skúsenosti s rovnako rozmýšľajúcimi členmi.</div>
-                    <a href="#" class="btn-link floors__btn-link">
+                    <a href="#" class="btn-link floors__btn-link"
+                      data-modal-open="freelancers">
                       <svg class="icon icon-arrow-right btn-link__icon btn-link__arrow-right">
                         <use xlink:href="/img/sprite.svg#icon-arrow-right"></use>
                       </svg>
@@ -276,12 +277,12 @@
                   <p>Kontaktuj nás pre viac informácii o prenájme malých kancelárii.</p>
                 </div>
                 <div class="item__footer">
-                  <button class="btn-link btn-link_lg">
+                  <a href="info@platformhouse.sk" class="btn-link btn-link_lg">
                     <svg class="icon icon-arrow-right btn-link__icon btn-link__arrow-right">
                       <use xlink:href="/img/sprite.svg#icon-arrow-right"></use>
                     </svg>
                     <span class="btn-link__title">Send mail</span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -294,12 +295,12 @@
                   <p>Kontaktuj nás pre&nbsp;viac&nbsp;informácii.</p>
                 </div>
                 <div class="item__footer">
-                  <button class="btn-link btn-link_lg">
+                  <a href="info@platformhouse.sk" class="btn-link btn-link_lg">
                     <svg class="icon icon-user btn-link__icon btn-link__user">
                       <use xlink:href="/img/sprite.svg#icon-user"></use>
                     </svg>
                     <span class="btn-link__title">Hiring</span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -315,7 +316,8 @@
             <div class="location__inner">
               <div class="sm-label side-label location__label">Location</div>
               <h2 class="title-md location__title">Vitaj v PLATFORM House, 5 km od centra</h2>
-              <a href="#" class="location__link">
+              <a href="https://www.google.com/maps/place/Ra%C4%8Dianska+3269%2F71A,+831+02+Bratislava/@48.1714184,17.122879,17z/data=!3m1!4b1!4m5!3m4!1s0x476c8ebad3ef7b2d:0x1b1900ac27eef698!8m2!3d48.1714148!4d17.12507"
+                class="location__link">
                 <img src="/img/google-logo.svg" alt="google logo" class="location__link-icon">
                 <span class="location__link-title">View Google maps</span>
                 <svg class="icon icon-arrow-right location__link-arrow">
@@ -332,12 +334,12 @@
         <div class="inner testimonials__inner">
           <div class="testimonials__container">
             <div class="testimonials__content">
-              <div class="sm-label side-label testimonials__label"></div>
+              <div class="sm-label side-label testimonials__label">Testimonials</div>
               <div class="testimonials__slider js-testimonials-slider">
                 <div class="testimonials__slide js-testimonials-slide" data-index="1">
                   <div class="testimonials__text">V Plat4m House najviac oceňujem ľahko prístupné vybavenie a komunitu zaujímavých ľudí online aj priamo na mieste, s ktorými si môžeme pomáhať.</div>
                   <div class="profile">
-                    <div class="profile__img" style="background-image: url(https://placecage.com/1000/1000);"></div>
+                    <div class="profile__img" style="background-image: url(/img/img-4-mini.jpg);"></div>
                     <div class="profile__content">
                       <div class="profile__title">Lukas Horak</div>
                       <div class="profile__subtitle">CEO at PLATFORM</div>
@@ -345,41 +347,33 @@
                   </div>
                 </div>
                 <div class="testimonials__slide js-testimonials-slide" data-index="2">
-                  <div class="testimonials__text">V Plat4m House najviac oceňujem ľahko prístupné vybavenie a komunitu zaujímavých ľudí online aj priamo na mieste, s ktorými si môžeme pomáhať.</div>
+                  <div class="testimonials__text">Najväčší benefit PLATFORM HOUSE vidím v spojení zabehnutej digitálnej agentúry PLATFORM so startupmi a freelancermi. Agentúry v PLATFORM HOUSE môžu využiť služby freelancerov, ktorí sa nachádzajú v jednej budove.</div>
                   <div class="profile">
-                    <div class="profile__img" style="background-image: url(https://placecage.com/2000/2000);"></div>
+                    <div class="profile__img" style="background-image: url(/img/adrian.png);"></div>
                     <div class="profile__content">
-                      <div class="profile__title">Lukas Horak</div>
+                      <div class="profile__title">Adrian</div>
                       <div class="profile__subtitle">CEO at PLATFORM</div>
                     </div>
                   </div>
                 </div>
                 <div class="testimonials__slide js-testimonials-slide" data-index="3">
-                  <div class="testimonials__text">V Plat4m House najviac oceňujem ľahko prístupné vybavenie a komunitu zaujímavých ľudí online aj priamo na mieste, s ktorými si môžeme pomáhať.</div>
+                  <div class="testimonials__text">Teším sa na koncept, ktorý sa momentálne spúšťa a ktorý prináša prepojenie spoločnosti PLATFORM s mladými firmami ako aj s freelancermi.</div>
                   <div class="profile">
-                    <div class="profile__img" style="background-image: url(https://placecage.com/3000/3000);"></div>
+                    <div class="profile__img" style="background-image: url(/img/stano.jpg);"></div>
                     <div class="profile__content">
-                      <div class="profile__title">Lukas Horak</div>
+                      <div class="profile__title">Stano</div>
                       <div class="profile__subtitle">CEO at PLATFORM</div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="testimonials__logos">
-                <a href="#" class="testimonials__logo js-testimonials-thumb" data-index="1">
-                  <img src="/img/platform.svg" alt="/" class="testimonials__logo-in"> </a>
-                <a href="#" class="testimonials__logo js-testimonials-thumb" data-index="2">
-                  <img src="/img/wework.png" alt="/" class="testimonials__logo-in"> </a>
-                <a href="#" class="testimonials__logo js-testimonials-thumb" data-index="3">
-                  <img src="/img/google.png" alt="/" class="testimonials__logo-in"> </a>
-              </div>
             </div>
           </div>
           <div class="testimonials__figure">
             <div class="testimonials__figure-in">
-              <div class="testimonials__picture js-testimonials-picture" data-index="1" style="background-image: url(https://placecage.com/1000/1000);"></div>
-              <div class="testimonials__picture js-testimonials-picture" data-index="2" style="background-image: url(https://placecage.com/2000/2000);"></div>
-              <div class="testimonials__picture js-testimonials-picture" data-index="3" style="background-image: url(https://placecage.com/3000/3000);"></div>
+              <div class="testimonials__picture js-testimonials-picture" data-index="1" style="background-image: url(/img/img-4.jpg);"></div>
+              <div class="testimonials__picture js-testimonials-picture" data-index="2" style="background-image: url(/img/adrian.png);"></div>
+              <div class="testimonials__picture js-testimonials-picture" data-index="3" style="background-image: url(/img/stano.jpg);"></div>
             </div>
           </div>
         </div>
@@ -403,10 +397,7 @@
           <div class="footer__main">
             <div class="footer__contacts">
               <div>
-                <a href="mailto:info@platformhouse.com" class="footer__mail">info@platformhouse.com</a>
-              </div>
-              <div>
-                <a href="tel:" class="footer__phone">+421 (0) 903 333 333</a>
+                <a href="mailto:info@platformhouse.sk" class="footer__mail">info@platformhouse.sk</a>
               </div>
               <div class="footer__social">
                 <a href="#" class="footer__social-item">
@@ -451,7 +442,7 @@
       </footer>
       <!-- end footer -->
       <!-- begin page -->
-      <div class="page" data-modal="form">
+      <div class="page" data-modal="form" data-modal-prevent>
         <div class="page__inner">
           <a href="#" class="page__back" data-modal-close="form">
             <svg class="icon icon-arrow-left page__back-icon">
@@ -462,10 +453,10 @@
             <form action="/" class="form page__form js-validate">
               <div class="form__header">
                 <div class="title-lg form__title">Kontaktný formulár</div>
-                <div class="form__description">
-                  <p>Ozvi sa nám, pridaj sa k nám alebo si
-                    <strong>vyskúšaj deň zadarmo</strong>.</p>
-                </div>
+              </div>
+              <div class="form__description">
+                <p>Ozvi sa nám, pridaj sa k nám alebo si
+                  <strong>vyskúšaj deň zadarmo</strong>.</p>
               </div>
               <div class="form__body">
                 <div class="form__field-group">
@@ -546,6 +537,36 @@
         </div>
       </div>
       <!-- end page -->
+      <!-- begin modal -->
+      <div class="modal" data-modal="startups" data-modal-esc>
+        <div class="modal__container" data-modal-prevent>
+          <a href="#" class="modal__close" data-modal-close="startups">
+            <svg class="icon icon-close modal__close-icon">
+              <use xlink:href="/img/sprite.svg#icon-close"></use>
+            </svg>
+          </a>
+          <div class="modal__header">
+            <h2 class="title-md modal__title">Startups</h2>
+            <div class="modal__label">3. poschodie</div>
+          </div>
+          <img src="/img/floor-startups.svg" alt="Startups" class="modal__img"> </div>
+      </div>
+      <!-- end modal -->
+      <!-- begin modal -->
+      <div class="modal" data-modal="freelancers" data-modal-esc>
+        <div class="modal__container" data-modal-prevent>
+          <a href="#" class="modal__close" data-modal-close="freelancers">
+            <svg class="icon icon-close modal__close-icon">
+              <use xlink:href="/img/sprite.svg#icon-close"></use>
+            </svg>
+          </a>
+          <div class="modal__header">
+            <h2 class="title-md modal__title">Freelancers</h2>
+            <div class="modal__label">3. poschodie</div>
+          </div>
+          <img src="/img/floor-freelancers.svg" alt="Freelancers" class="modal__img"> </div>
+      </div>
+      <!-- end modal -->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

@@ -3,7 +3,7 @@
 	<div class="inner testimonials__inner">
 		<div class="testimonials__container">
 			<div class="testimonials__content">
-				<div class="sm-label side-label testimonials__label">{{item.label}}</div>
+				<div class="sm-label side-label testimonials__label">{{testimonials.label}}</div>
 				<div class="testimonials__slider js-testimonials-slider">
 					{% for item in testimonials.items %}
 						<div class="testimonials__slide js-testimonials-slide" data-index="{{loop.index}}">
@@ -18,13 +18,13 @@
 						</div>
 					{% endfor %}
 				</div>
-				<div class="testimonials__logos">
+				{#<div class="testimonials__logos">
 					{% for item in testimonials.items %}
 						<a href="#" class="testimonials__logo js-testimonials-thumb" data-index="{{loop.index}}">
 							<img src="/img/{{item.logo}}" alt="/" class="testimonials__logo-in">
 						</a>
 					{% endfor %}
-				</div>
+				</div>#}
 			</div>
 		</div>
 		<div class="testimonials__figure">

@@ -20,10 +20,10 @@
 									<span class="btn__title">{{item.btn | safe}}</span>
 								</button>
 							{% elif item.btnLink %}
-								<button class="btn-link btn-link_lg">
+								<a href="info@platformhouse.sk" class="btn-link btn-link_lg">
 									{{mixins.icon(item.btnIcon, 'btn-link__icon btn-link__' + item.btnIcon)}}
 									<span class="btn-link__title">{{item.btnLink | safe}}</span>
-								</button>
+								</a>
 							{% endif %}
 							{% if item.label %}
 								<div class="item__label">{{item.label | safe}}</div>
