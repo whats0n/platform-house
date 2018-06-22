@@ -34,6 +34,7 @@ $('.js-testimonials').each((i, container) => {
   const slider = container.find('.js-testimonials-slider');
   const thumbs = container.find('.js-testimonials-thumb');
   const pictures = container.find('.js-testimonials-picture');
+  let play = true;
 
   slider
     .addClass(OWL)
@@ -51,6 +52,13 @@ $('.js-testimonials').each((i, container) => {
       onTranslated: () => update({ slider, thumbs, pictures }),
       onInitialized: () => update({ slider, thumbs, pictures })
     });
+
+  $('.testimonials__arrow').on('click', e => {
+    if (play) {
+      play = false;
+      slider.trigger('stop.owl.autoplay');
+    }
+  });
 
   // thumbs.each((i, thumb) => {
   //   thumb = $(thumb);
