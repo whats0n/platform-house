@@ -1,13 +1,13 @@
 <!-- begin hero -->
 <div class="hero">
 	<div class="hero__bg">
-		<div class="hero__bg-left" style="background-image: url({% if lang == "en" %}../{% endif %}img/hero-left.jpg);"></div>
-		<div class="hero__bg-right" style="background-image: url({% if lang == "en" %}../{% endif %}img/hero-right.jpg);"></div>
+		<div class="hero__bg-left" style="background-image: url({{rootPath}}img/hero.jpg);"></div>
+		<div class="hero__bg-right" style="background-image: url({{rootPath}}img/hero.jpg);"></div>
 	</div>
 	<div class="inner hero__inner">
 		<div class="hero__lang">
-			<a href="#" class="hero__lang-item {% if lang == "sk" %}is-active{% endif %}">Sk</a>
-			<a href="#" class="hero__lang-item {% if lang == "en" %}is-active{% endif %}">En</a>
+			<a href="{{rootPath}}index.html" class="hero__lang-item {% if lang == "sk" %}is-active{% endif %}">Sk</a>
+			<a href="en/index.html" class="hero__lang-item {% if lang == "en" %}is-active{% endif %}">En</a>
 		</div>
 		<div class="hero__figure">
 			<div class="hero__figure-shadow"></div>
@@ -21,8 +21,8 @@
 				</div>
 			</div>
 			<div class="hero__footer">
-				<button class="btn hero__btn">
-					{{mixins.icon('plus', 'btn__plus')}}
+				<button class="btn hero__btn" data-modal-open="form">
+					{{mixins.icon('plus', 'btn__plus', rootPath)}}
 					<span class="btn__title">{{hero.btn | safe}}</span>
 				</button>
 				<div class="hero__label">{{hero.label | safe}}</div>

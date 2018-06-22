@@ -78,7 +78,7 @@
 					<div class="floors__item floors__item_{{item.color}} js-floors-item">
 						<div class="floors__number">{{item.number | safe}}</div>
 						<div class="floors__content">
-							<img src="{% if lang == "en" %}../{% endif %}img/{{item.icon}}.svg" alt="{{item.icon}}" class="floors__icon">
+							<img src="{{rootPath}}img/{{item.icon}}.svg" alt="{{item.icon}}" class="floors__icon">
 							<div class="floors__header js-floors-control" data-target="figure-{{loop.index}}">
 								<div class="floors__arrow"></div>
 								<h2 class="title-md floors__title">{{item.title | safe}}</h2>
@@ -87,8 +87,8 @@
 							<div class="floors__body js-floors-container">
 								<div class="floors__description text-lg">{{item.description | safe}}</div>
 								{% if item.btn %}
-									<a href="#" class="btn-link floors__btn-link">
-										{{mixins.icon('arrow-right', 'btn-link__icon btn-link__arrow-right')}}
+									<a href="#" class="btn-link floors__btn-link" data-modal-open="{{item.modal.target}}">
+										{{mixins.icon('arrow-right', 'btn-link__icon btn-link__arrow-right', rootPath)}}
 										<span class="btn-link__title">{{item.btn | safe}}</span>
 									</a>
 								{% endif %}

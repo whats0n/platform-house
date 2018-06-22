@@ -1,7 +1,12 @@
 import 'jquery-form-validator';
-import {ERROR, VALID} from '../constants';
+import {ERROR, VALID, ACTIVE} from '../constants';
+import modal from './modal';
 
 $('.js-validate').each((i, form) => {
+  const formJQ = $(form);
+  const fields = formJQ.find('.js-field');
+  const select = formJQ.find('.js-field-select');
+
   $.validate({
     form: form,
     scrollToTopOnError: false,
@@ -16,11 +21,23 @@ $('.js-validate').each((i, form) => {
     },
     onError($form) {
       $form.removeClass(VALID);
-      console.log('error');
     },
     onSuccess($form) {
       $form.addClass(VALID);
-      console.log('valid');
+      setTimeout(() => {
+        $form
+          .removeClass(VALID)
+          .get(0)
+          .reset();
+        select
+          .find('option')
+          .prop('selected', false)
+          .first()
+          .prop('selected', true)
+          .change();
+        fields.removeClass(ACTIVE);
+        modal.hide('form');
+      }, 2000);
     }
   });
 

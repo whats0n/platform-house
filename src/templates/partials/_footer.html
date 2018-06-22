@@ -4,11 +4,13 @@
 		{% if footerFull %}
 			<div class="footer__top">
 				<h2 class="title-md footer__title">{{footer.title | safe}}</h2>
-				<button class="btn footer__btn">
-					{{mixins.icon('plus', 'btn__plus')}}
-					<span class="btn__title">{{footer.btn | safe}}</span>
-				</button>
-				<div class="footer__label">{{footer.label | safe}}</div>
+				<div class="footer__control">
+					<button class="btn footer__btn" data-modal-open="form">
+						{{mixins.icon('plus', 'btn__plus', rootPath)}}
+						<span class="btn__title">{{footer.btn | safe}}</span>
+					</button>
+					<div class="footer__label">{{footer.label | safe}}</div>
+				</div>
 			</div>
 		{% endif %}
 		<div class="footer__main">
@@ -16,16 +18,16 @@
 				<div>
 					<a href="mailto:{{footer.email | safe}}" class="footer__mail">{{footer.email | safe}}</a>
 				</div>
-				<div>
+				{# <div>
 					<a href="tel:{{footer.link | safe}}" class="footer__phone">{{footer.phone.title | safe}}</a>
-				</div>
+				</div> #}
 				<div class="footer__social">
-					<a href="#" class="footer__social-item">
-						{{mixins.icon('fb', 'footer__social-icon footer__social-fb')}}
+					<a target="_blank" href="https://www.facebook.com/platformhouse/" class="footer__social-item">
+						{{mixins.icon('fb', 'footer__social-icon footer__social-fb', rootPath)}}
 					</a>
-					<a href="#" class="footer__social-item">
-						{{mixins.icon('insta', 'footer__social-icon footer__social-insta')}}
-					</a>
+					{#<a target="_blank" href="#" class="footer__social-item">
+						{{mixins.icon('insta', 'footer__social-icon footer__social-insta', rootPath)}}
+					</a>#}
 				</div>
 			</div>
 			<div class="footer__right">
@@ -38,7 +40,7 @@
 				</ul>
 				<div class="footer__copyright">
 					<a href="#" class="logo footer__logo">
-						{{mixins.icon('logo', 'logo__icon')}}
+						{{mixins.icon('logo', 'logo__icon', rootPath)}}
 						<div class="logo__content">
 							<div class="logo__line">PLATFORM</div>
 							<div class="logo__line">HOUSE</div>

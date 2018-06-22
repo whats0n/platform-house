@@ -7,7 +7,7 @@
 				<div class="pricing__item">
 					<div class="item">
 						<div class="item__figure">
-							<img src="{% if lang == "en" %}../{% endif %}img/{{item.icon}}.svg" alt="{{item.icon}}" class="item__icon">
+							<img src="{{rootPath}}img/{{item.icon}}.svg" alt="{{item.icon}}" class="item__icon">
 						</div>
 						<h3 class="title-sm item__title">{{item.title | safe}}</h3>
 						<div class="text-lg item__description">
@@ -15,15 +15,15 @@
 						</div>
 						<div class="item__footer">
 							{% if item.btn %}
-								<button class="btn btn_lg item__btn">
-									{{mixins.icon(item.btnIcon, 'btn__plus')}}
+								<button class="btn btn_lg item__btn" data-modal-open="form">
+									{{mixins.icon(item.btnIcon, 'btn__plus', rootPath)}}
 									<span class="btn__title">{{item.btn | safe}}</span>
 								</button>
 							{% elif item.btnLink %}
-								<button class="btn-link btn-link_lg">
-									{{mixins.icon(item.btnIcon, 'btn-link__icon btn-link__' + item.btnIcon)}}
+								<a href="mailto:info@platformhouse.sk" class="btn-link btn-link_lg">
+									{{mixins.icon(item.btnIcon, 'btn-link__icon btn-link__' + item.btnIcon, rootPath)}}
 									<span class="btn-link__title">{{item.btnLink | safe}}</span>
-								</button>
+								</a>
 							{% endif %}
 							{% if item.label %}
 								<div class="item__label">{{item.label | safe}}</div>

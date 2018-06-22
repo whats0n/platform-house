@@ -1,6 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-arrow-left" viewBox="0 0 21.4 18.8">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-arrow-left-lg" viewBox="0 0 53.4 14.8">
+    <title>
+        arrow-right-lg
+    </title>
+    <path d="M2.4 6.4h51v2h-51z"/>
+    <path d="M.01 7.444L1.424 6.03l7.425 7.425-1.414 1.414z"/>
+    <path d="M.01 7.384L7.435-.041l1.414 1.415-7.425 7.424z"/>
+</symbol><symbol id="icon-arrow-left" viewBox="0 0 21.4 18.8">
     <path d="M2.4 8.4h19v2h-19z"/>
     <path d="M9.4 18.8L0 9.4 9.4 0l1.4 1.4-8 8 8 8z"/>
+</symbol><symbol id="icon-arrow-right-lg" viewBox="0 0 53.4 14.8">
+    <title>
+        arrow-right-lg
+    </title>
+    <path d="M0 6.4h51v2H0z"/>
+    <path d="M44.606 13.374L52.03 5.95l1.414 1.414-7.424 7.424z"/>
+    <path d="M44.606 1.435L46.02.02l7.424 7.425-1.414 1.414z"/>
 </symbol><symbol id="icon-arrow-right" viewBox="0 0 13.4 14.8">
     <title>
         arrow-right
@@ -13,6 +27,8 @@
         Path 2
     </title>
     <path d="M6.6 14.1L0 8.1l2-2.2 4.4 4L15.9 0l2.2 2.1z"/>
+</symbol><symbol id="icon-close" viewBox="0 0 357 357">
+    <path d="M357 35.7L321.3 0 178.5 142.8 35.7 0 0 35.7l142.8 142.8L0 321.3 35.7 357l142.8-142.8L321.3 357l35.7-35.7-142.8-142.8z"/>
 </symbol><symbol id="icon-fb" viewBox="0 0 11 17">
     <title>
         Fill 1

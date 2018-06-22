@@ -1,5 +1,5 @@
-{% macro icon(i, classList) %}
-<svg class="icon icon-{{i}} {{classList}}"><use xlink:href="/img/sprite.svg#icon-{{i}}"></use></svg>
+{% macro icon(i, classList, path) %}
+<svg class="icon icon-{{i}} {{classList}}"><use xlink:href="{{path}}img/sprite.svg#icon-{{i}}"></use></svg>
 {% endmacro %}
 
 {% macro field(props) %}

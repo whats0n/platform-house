@@ -1,0 +1,126 @@
+{
+	"hero": {
+		"title": "Shared space for&nbsp;creative minds",
+		"description": "Do you need a desk or a small office? You can have it in 24 hours.",
+		"btn": "Become a member",
+		"label": "Try a free day"
+	},
+	"floors": [
+		{
+			"color": "red",
+			"number": "3",
+			"icon": "scaleups",
+			"title": "Scaleups",
+			"label": "3rd floor",
+			"description": "The third floor is designed for growing and established company PLATFORM. PLATFORM plans to share its experience as one of the PLATFORM House benefits."
+		},
+		{
+			"color": "blue",
+			"number": "2",
+			"icon": "startups",
+			"title": "Startups",
+			"label": "2nd floor",
+			"description": "The second floor is designed for small starting companies which understand, appreciate and use the benefits of shared space.",
+			"btn": "View floor plan",
+			"modal": {
+				"target": "startups",
+				"title": "Startups",
+				"label": "2. floor",
+				"img": "img/floor-startups.svg"
+			}
+		},
+		{
+			"color": "yellow",
+			"number": "1",
+			"icon": "freelancers",
+			"title": "Freelancers",
+			"label": "1st floor",
+			"description": "The first floor is designed for individual entrepreneurs and creatives who want to use smart offices, network and share experience with other like-minded people.",
+			"btn": "View floor plan",
+			"modal": {
+				"target": "freelancers",
+				"title": "Freelancers",
+				"label": "1. floor",
+				"img": "img/floor-freelancers.svg"
+			}
+		}
+	],
+	"benefits": {
+		"title": "PLATFORM House It&nbsp;is&nbsp;not only about offices, it is about the lifestyle",
+		"label": "Benefits",
+		"items": [
+			{
+				"img": "img/img-1.jpg",
+				"size": "lg",
+				"list": [ "Unique space", "Flexible terms", "Latests technology", "Talented people" ]
+			},
+			{
+				"img": "img/img-2.jpg",
+				"size": "sm",
+				"list": [ "Chill out and relax area", "Access to successful entrepreneurs and companies", "Regular meet ups for self-development and education", "Restaurant with fine and healthy food right in the building" ]
+			},
+			{
+				"img": "img/img-3.jpg",
+				"size": "md",
+				"list": [ "Receptionist always at hand", "Bicycle parking", "transportation is 3min walk", "Highspeed internet" ]
+			}
+		]
+	},
+	"pricing": {
+		"label": "Pricing",
+		"items": [
+			{
+				"title": "Freelancers",
+				"icon": "freelancers",
+				"description": "Become a member in&nbsp;24&nbsp;hours.",
+				"btn": "Become a member",
+				"btnIcon": "plus",
+				"label": "Try a free day"
+			},
+			{
+				"title": "Startups",
+				"icon": "startups",
+				"description": "Contact us for more information on small office&nbsp;rental.",
+				"btnLink": "Send mail",
+				"btnIcon": "arrow-right"
+			},
+			{
+				"title": "Scaleups",
+				"icon": "scaleups",
+				"description": "Contact us for more&nbsp;information.",
+				"btnLink": "Hiring",
+				"btnIcon": "user"
+			}
+		]
+	},
+	"location": {
+		"title": "Welcome to PLATFORM House, 5km from Bratislava city centre",
+		"label": "Location",
+		"link": "View Google maps"
+	},
+	"testimonials": {
+		"label": "Testimonials",
+		"items": [
+			{
+				"logo": "wework.png",
+				"title": "The greatest benefit of PLATFORM HOUSE in my eyes is merging of PLATFORM - a renowned digital agency with startups and freelancers. The agencies within PLATFORM HOUSE can involve freelancers working in the same building into their own projects.",
+				"img": "img/adrian.png",
+				"profile": {
+					"img": "img/adrian.png",
+					"title": "Adrian Řezníček",
+					"subtitle": "FREELANCER"
+				}
+			},
+			{
+				"logo": "google.png",
+				"title": "I am looking forward to the concept that’s being put into practise and brings vivid interaction between PLATFORM and young companies as well as freelancers.",
+				"img": "img/stano-lg.jpg",
+				"profile": {
+					"img": "img/stano.jpg",
+					"title": "Stano Bagin",
+					"subtitle": "FREELANCER"
+				}
+			}
+		]
+	}
+}

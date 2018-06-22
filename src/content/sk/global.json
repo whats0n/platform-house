@@ -1,10 +1,11 @@
 {
+	"rootPath" : "",
 	"lang": "sk",
 	"footer": {
 		"title": "Zaujali sme ťa? Pridaj sa k nám.",
 		"btn": "Staň sa členom",
-		"label": "a vyskúšj si týždeň zadarmo",
-		"email": "info@platformhouse.com",
+		"label": "a vyskúšj si deň zadarmo",
+		"email": "info@platformhouse.sk",
 		"phone": {
 			"title": "+421 (0) 903 333 333",
 			"link": "+4210903333333"
@@ -24,5 +25,19 @@
 			}
 		],
 		"copyright": "Copyright © 2018 All Rights Reserved"
+	},
+	"form": {
+		"title": "Kontaktný formulár",
+		"description": "Ozvi sa nám, pridaj sa k nám alebo si <strong>vyskúšaj deň zadarmo</strong>.",
+		"name": "Meno",
+		"surname": "Priezvisko",
+		"email": "Email",
+		"phone": "Telefón",
+		"message": "Správa",
+		"btn": {
+			"default": "ODOSLAť",
+			"success": "Ďakujeme"
+		},
+		"hint": "Formulár bol úspešne odoslaný."
 	}
 }

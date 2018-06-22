@@ -3,13 +3,13 @@
 	<div class="inner testimonials__inner">
 		<div class="testimonials__container">
 			<div class="testimonials__content">
-				<div class="sm-label side-label testimonials__label">{{item.label}}</div>
+				<div class="sm-label side-label testimonials__label">{{testimonials.label}}</div>
 				<div class="testimonials__slider js-testimonials-slider">
 					{% for item in testimonials.items %}
 						<div class="testimonials__slide js-testimonials-slide" data-index="{{loop.index}}">
 							<div class="testimonials__text">{{item.title | safe}}</div>
 							<div class="profile">
-								<div class="profile__img" style="background-image: url({{item.profile.img}});"></div>
+								<div class="profile__img" style="background-image: url({{rootPath}}{{item.profile.img}});"></div>
 								<div class="profile__content">
 									<div class="profile__title">{{item.profile.title | safe}}</div>
 									<div class="profile__subtitle">{{item.profile.subtitle | safe}}</div>
@@ -18,19 +18,19 @@
 						</div>
 					{% endfor %}
 				</div>
-				<div class="testimonials__logos">
+				{#<div class="testimonials__logos">
 					{% for item in testimonials.items %}
 						<a href="#" class="testimonials__logo js-testimonials-thumb" data-index="{{loop.index}}">
-							<img src="{% if lang == "en" %}../{% endif %}img/{{item.logo}}" alt="/" class="testimonials__logo-in">
+							<img src="{{rootPath}}img/{{item.logo}}" alt="/" class="testimonials__logo-in">
 						</a>
 					{% endfor %}
-				</div>
+				</div>#}
 			</div>
 		</div>
 		<div class="testimonials__figure">
 			<div class="testimonials__figure-in">
 				{% for item in testimonials.items %}
-					<div class="testimonials__picture js-testimonials-picture" data-index="{{loop.index}}" style="background-image: url({{item.img}});"></div>
+					<div class="testimonials__picture js-testimonials-picture" data-index="{{loop.index}}" style="background-image: url({{rootPath}}{{item.img}});"></div>
 				{% endfor %}
 			</div>
 		</div>

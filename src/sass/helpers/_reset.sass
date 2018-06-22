@@ -35,6 +35,8 @@ input, button
 input
     &::-ms-clear
         display: none
+    &::-webkit-inner-spin-button
+        display: none
 div, input, textarea, select,button,
 h1,h2,h3,h4,h5,h6,a,span,a:focus
     outline: none
@@ -46,6 +48,7 @@ table
     width: 100%
 html
     box-sizing: border-box
+    -webkit-overflow-scrolling: touch
 *, *:before, *:after
     box-sizing: inherit
 

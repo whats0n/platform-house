@@ -1,13 +1,13 @@
-import {BODY} from '../constants';
+// import {ACTIVE} from '../constants';
 
-const FORM = 'is-form';
+// $('.js-form').on('scroll', e => {
+//   const container = $(e.currentTarget);
+//   const inner = container.find('.js-form-inner');
+//   const header = container.find('.js-form-header');
 
-$('.js-form-open').click(e => {
-  e.preventDefault();
-  BODY.addClass(FORM);
-});
-
-$('.js-form-close').click(e => {
-  e.preventDefault();
-  BODY.removeClass(FORM);
-});
+//   if (inner.position().top + header.position().top <= container.scrollTop()) {
+//     header.addClass(ACTIVE);
+//   } else {
+//     header.removeClass(ACTIVE);
+//   }
+// });

@@ -10,6 +10,7 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="{% if lang == "en" %}../{% endif %}css/app.css">
     {# {% include "../partials/_media-tags.html" %} #}
+    <script>window.rootPath = '{{rootPath}}';</script>
   </head>
   <body>
 
@@ -18,7 +19,6 @@
       {% block content %}{% endblock %}
     </div>
     <!-- END content -->
-    {#{% include 'partials/_form.html' %}#}
 
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="{% if lang == "en" %}../{% endif %}js/app.js"></script>

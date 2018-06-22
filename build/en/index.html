@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" media="all" href="../css/app.css"> </head>
+    <link rel="stylesheet" media="all" href="../css/app.css">
+    <script>
+      window.rootPath = '../';
+
+    </script>
+  </head>
   <body>
     <!-- BEGIN content -->
     <div class="out">
@@ -16,7 +21,7 @@
         <div class="inner hero__inner">
           <a href="#" class="logo header__logo js-logo">
             <svg class="icon icon-logo logo__icon">
-              <use xlink:href="/img/sprite.svg#icon-logo"></use>
+              <use xlink:href="../img/sprite.svg#icon-logo"></use>
             </svg>
             <div class="logo__content">
               <div class="logo__line">PLATFORM</div>
@@ -29,13 +34,13 @@
       <!-- begin hero -->
       <div class="hero">
         <div class="hero__bg">
-          <div class="hero__bg-left" style="background-image: url(../img/hero-left.jpg);"></div>
-          <div class="hero__bg-right" style="background-image: url(../img/hero-right.jpg);"></div>
+          <div class="hero__bg-left" style="background-image: url(../img/hero.jpg);"></div>
+          <div class="hero__bg-right" style="background-image: url(../img/hero.jpg);"></div>
         </div>
         <div class="inner hero__inner">
           <div class="hero__lang">
-            <a href="#" class="hero__lang-item ">Sk</a>
-            <a href="#" class="hero__lang-item is-active">En</a>
+            <a href="../index.html" class="hero__lang-item ">Sk</a>
+            <a href="en/index.html" class="hero__lang-item is-active">En</a>
           </div>
           <div class="hero__figure">
             <div class="hero__figure-shadow"></div>
@@ -49,13 +54,13 @@
               </div>
             </div>
             <div class="hero__footer">
-              <button class="btn hero__btn">
+              <button class="btn hero__btn" data-modal-open="form">
                 <svg class="icon icon-plus btn__plus">
-                  <use xlink:href="/img/sprite.svg#icon-plus"></use>
+                  <use xlink:href="../img/sprite.svg#icon-plus"></use>
                 </svg>
                 <span class="btn__title">Become a member</span>
               </button>
-              <div class="hero__label">Try a free week</div>
+              <div class="hero__label">Try a free day</div>
             </div>
           </div>
         </div>
@@ -129,10 +134,10 @@
                   <div class="floors__header js-floors-control" data-target="figure-1">
                     <div class="floors__arrow"></div>
                     <h2 class="title-md floors__title">Scaleups</h2>
-                    <div class="floors__label">3. poschodie</div>
+                    <div class="floors__label">3rd floor</div>
                   </div>
                   <div class="floors__body js-floors-container">
-                    <div class="floors__description text-lg">Tretie poschodie je určené pre rýchlo-rastúcu a etablovanú spoločnosť PLATFORM. PLATFORM plánuje zdieľať s&nbsp;ostatnými členmi svoje skúsenosti ako jeden z benefitov PLATFORM House.</div>
+                    <div class="floors__description text-lg">The third floor is designed for growing and established company PLATFORM. PLATFORM plans to share its experience as one of the PLATFORM House benefits.</div>
                   </div>
                 </div>
               </div>
@@ -143,15 +148,15 @@
                   <div class="floors__header js-floors-control" data-target="figure-2">
                     <div class="floors__arrow"></div>
                     <h2 class="title-md floors__title">Startups</h2>
-                    <div class="floors__label">2. poschodie</div>
+                    <div class="floors__label">2nd floor</div>
                   </div>
                   <div class="floors__body js-floors-container">
-                    <div class="floors__description text-lg">Druhé poschodie je určené pre malé a&nbsp;začínajúce spoločnosti, ktoré rozumejú výhodam zdieľaných priestorov a chcú ich využívať naplno.</div>
-                    <a href="#" class="btn-link floors__btn-link">
+                    <div class="floors__description text-lg">The second floor is designed for small starting companies which understand, appreciate and use the benefits of shared space.</div>
+                    <a href="#" class="btn-link floors__btn-link" data-modal-open="startups">
                       <svg class="icon icon-arrow-right btn-link__icon btn-link__arrow-right">
-                        <use xlink:href="/img/sprite.svg#icon-arrow-right"></use>
+                        <use xlink:href="../img/sprite.svg#icon-arrow-right"></use>
                       </svg>
-                      <span class="btn-link__title">Zobraziť pôdorys</span>
+                      <span class="btn-link__title">View floor plan</span>
                     </a>
                   </div>
                 </div>
@@ -163,15 +168,15 @@
                   <div class="floors__header js-floors-control" data-target="figure-3">
                     <div class="floors__arrow"></div>
                     <h2 class="title-md floors__title">Freelancers</h2>
-                    <div class="floors__label">1. poschodie</div>
+                    <div class="floors__label">1st floor</div>
                   </div>
                   <div class="floors__body js-floors-container">
-                    <div class="floors__description text-lg">Prvé poschodie je určené pre podnikateľov a&nbsp;kreatívcov - jednotlivcov, ktorí chcú naplno využívať moderné kancelárie, networkovať a&nbsp;zdieľať skúsenosti s rovnako rozmýšľajúcimi členmi.</div>
-                    <a href="#" class="btn-link floors__btn-link">
+                    <div class="floors__description text-lg">The first floor is designed for individual entrepreneurs and creatives who want to use smart offices, network and share experience with other like-minded people.</div>
+                    <a href="#" class="btn-link floors__btn-link" data-modal-open="freelancers">
                       <svg class="icon icon-arrow-right btn-link__icon btn-link__arrow-right">
-                        <use xlink:href="/img/sprite.svg#icon-arrow-right"></use>
+                        <use xlink:href="../img/sprite.svg#icon-arrow-right"></use>
                       </svg>
-                      <span class="btn-link__title">Zobraziť pôdorys</span>
+                      <span class="btn-link__title">View floor plan</span>
                     </a>
                   </div>
                 </div>
@@ -185,13 +190,13 @@
       <div class="benefits" data-scrollto-container="Benefits">
         <div class="inner benefits__inner">
           <div class="sm-label side-label benefits__label">Benefits</div>
-          <h2 class="title-md benefits__title">PLATFORM House nie sú kancelárie, je to životný štýl</h2>
+          <h2 class="title-md benefits__title">PLATFORM House It&nbsp;is&nbsp;not only about offices, it is about the lifestyle</h2>
           <div class="benefits__item benefits__item_lg benefits__item_odd">
             <ul class="benefits__list text-lg">
-              <li>Unikátne priestory</li>
-              <li>Flexibilné podmienky</li>
-              <li>Moderná technika</li>
-              <li>Talentovaní ľudia</li>
+              <li>Unique space</li>
+              <li>Flexible terms</li>
+              <li>Latests technology</li>
+              <li>Talented people</li>
             </ul>
             <div class="benefits__img">
               <div class="benefits__img-in">
@@ -206,10 +211,10 @@
           </div>
           <div class="benefits__item benefits__item_sm benefits__item_even">
             <ul class="benefits__list text-lg">
-              <li>Chillout a oddychové zóny</li>
-              <li>Prístup k iným úspešným podnikateľom a firmám</li>
-              <li>Pravidelné podujatia pre rozvoj osobnosti a možnosti vzdelávania</li>
-              <li>Reštaurácia s kvalitným a zdravým jedlom priamo v budove</li>
+              <li>Chill out and relax area</li>
+              <li>Access to successful entrepreneurs and companies</li>
+              <li>Regular meet ups for self-development and education</li>
+              <li>Restaurant with fine and healthy food right in the building</li>
             </ul>
             <div class="benefits__img">
               <div class="benefits__img-in">
@@ -224,10 +229,10 @@
           </div>
           <div class="benefits__item benefits__item_md benefits__item_odd">
             <ul class="benefits__list text-lg">
-              <li>Recepcia k tvojim službám</li>
-              <li>Parkovanie pre bicykle</li>
-              <li>Verejná doprava 3 minúty od budovy</li>
-              <li>Vysokorýchlostný internet</li>
+              <li>Receptionist always at hand</li>
+              <li>Bicycle parking</li>
+              <li>transportation is 3min walk</li>
+              <li>Highspeed internet</li>
             </ul>
             <div class="benefits__img">
               <div class="benefits__img-in">
@@ -254,16 +259,16 @@
                   <img src="../img/freelancers.svg" alt="freelancers" class="item__icon"> </div>
                 <h3 class="title-sm item__title">Freelancers</h3>
                 <div class="text-lg item__description">
-                  <p>Staň sa členom do&nbsp;24&nbsp;hodín.</p>
+                  <p>Become a member in&nbsp;24&nbsp;hours.</p>
                 </div>
                 <div class="item__footer">
-                  <button class="btn btn_lg item__btn">
+                  <button class="btn btn_lg item__btn" data-modal-open="form">
                     <svg class="icon icon-plus btn__plus">
-                      <use xlink:href="/img/sprite.svg#icon-plus"></use>
+                      <use xlink:href="../img/sprite.svg#icon-plus"></use>
                     </svg>
-                    <span class="btn__title">Staň sa členom</span>
+                    <span class="btn__title">Become a member</span>
                   </button>
-                  <div class="item__label">a vyskúšj si týždeň zadarmo</div>
+                  <div class="item__label">Try a free day</div>
                 </div>
               </div>
             </div>
@@ -273,15 +278,15 @@
                   <img src="../img/startups.svg" alt="startups" class="item__icon"> </div>
                 <h3 class="title-sm item__title">Startups</h3>
                 <div class="text-lg item__description">
-                  <p>Kontaktuj nás pre viac informácii o prenájme malých kancelárii.</p>
+                  <p>Contact us for more information on small office&nbsp;rental.</p>
                 </div>
                 <div class="item__footer">
-                  <button class="btn-link btn-link_lg">
+                  <a href="mailto:info@platformhouse.sk" class="btn-link btn-link_lg">
                     <svg class="icon icon-arrow-right btn-link__icon btn-link__arrow-right">
-                      <use xlink:href="/img/sprite.svg#icon-arrow-right"></use>
+                      <use xlink:href="../img/sprite.svg#icon-arrow-right"></use>
                     </svg>
                     <span class="btn-link__title">Send mail</span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -291,15 +296,15 @@
                   <img src="../img/scaleups.svg" alt="scaleups" class="item__icon"> </div>
                 <h3 class="title-sm item__title">Scaleups</h3>
                 <div class="text-lg item__description">
-                  <p>Kontaktuj nás pre&nbsp;viac&nbso;informácii.</p>
+                  <p>Contact us for more&nbsp;information.</p>
                 </div>
                 <div class="item__footer">
-                  <button class="btn-link btn-link_lg">
+                  <a href="mailto:info@platformhouse.sk" class="btn-link btn-link_lg">
                     <svg class="icon icon-user btn-link__icon btn-link__user">
-                      <use xlink:href="/img/sprite.svg#icon-user"></use>
+                      <use xlink:href="../img/sprite.svg#icon-user"></use>
                     </svg>
                     <span class="btn-link__title">Hiring</span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -314,12 +319,13 @@
           <div class="location__content">
             <div class="location__inner">
               <div class="sm-label side-label location__label">Location</div>
-              <h2 class="title-md location__title">Vitaj v PLATFORM House, 5 km od centra</h2>
-              <a href="#" class="location__link">
+              <h2 class="title-md location__title">Welcome to PLATFORM House, 5km from Bratislava city centre</h2>
+              <a target="_blank" href="https://www.google.com/maps/place/Ra%C4%8Dianska+3269%2F71A,+831+02+Bratislava/@48.1714184,17.122879,17z/data=!3m1!4b1!4m5!3m4!1s0x476c8ebad3ef7b2d:0x1b1900ac27eef698!8m2!3d48.1714148!4d17.12507"
+                class="location__link">
                 <img src="../img/google-logo.svg" alt="google logo" class="location__link-icon">
                 <span class="location__link-title">View Google maps</span>
                 <svg class="icon icon-arrow-right location__link-arrow">
-                  <use xlink:href="/img/sprite.svg#icon-arrow-right"></use>
+                  <use xlink:href="../img/sprite.svg#icon-arrow-right"></use>
                 </svg>
               </a>
             </div>
@@ -332,54 +338,36 @@
         <div class="inner testimonials__inner">
           <div class="testimonials__container">
             <div class="testimonials__content">
-              <div class="sm-label side-label testimonials__label"></div>
+              <div class="sm-label side-label testimonials__label">Testimonials</div>
               <div class="testimonials__slider js-testimonials-slider">
                 <div class="testimonials__slide js-testimonials-slide" data-index="1">
-                  <div class="testimonials__text">V Plat4m House najviac oceňujem ľahko prístupné vybavenie a komunitu zaujímavých ľudí online aj priamo na mieste, s ktorými si môžeme pomáhať.</div>
+                  <div class="testimonials__text">The greatest benefit of PLATFORM HOUSE in my eyes is merging of PLATFORM - a renowned digital agency with startups and freelancers. The agencies within PLATFORM HOUSE can involve freelancers working in the same building into their own
+                    projects.</div>
                   <div class="profile">
-                    <div class="profile__img" style="background-image: url(https://placecage.com/1000/1000);"></div>
+                    <div class="profile__img" style="background-image: url(../img/adrian.png);"></div>
                     <div class="profile__content">
-                      <div class="profile__title">Lukas Horak</div>
-                      <div class="profile__subtitle">CEO at PLATFORM</div>
+                      <div class="profile__title">Adrian Řezníček</div>
+                      <div class="profile__subtitle">FREELANCER</div>
                     </div>
                   </div>
                 </div>
                 <div class="testimonials__slide js-testimonials-slide" data-index="2">
-                  <div class="testimonials__text">V Plat4m House najviac oceňujem ľahko prístupné vybavenie a komunitu zaujímavých ľudí online aj priamo na mieste, s ktorými si môžeme pomáhať.</div>
+                  <div class="testimonials__text">I am looking forward to the concept that’s being put into practise and brings vivid interaction between PLATFORM and young companies as well as freelancers.</div>
                   <div class="profile">
-                    <div class="profile__img" style="background-image: url(https://placecage.com/2000/2000);"></div>
+                    <div class="profile__img" style="background-image: url(../img/stano.jpg);"></div>
                     <div class="profile__content">
-                      <div class="profile__title">Lukas Horak</div>
-                      <div class="profile__subtitle">CEO at PLATFORM</div>
+                      <div class="profile__title">Stano Bagin</div>
+                      <div class="profile__subtitle">FREELANCER</div>
                     </div>
                   </div>
                 </div>
-                <div class="testimonials__slide js-testimonials-slide" data-index="3">
-                  <div class="testimonials__text">V Plat4m House najviac oceňujem ľahko prístupné vybavenie a komunitu zaujímavých ľudí online aj priamo na mieste, s ktorými si môžeme pomáhať.</div>
-                  <div class="profile">
-                    <div class="profile__img" style="background-image: url(https://placecage.com/3000/3000);"></div>
-                    <div class="profile__content">
-                      <div class="profile__title">Lukas Horak</div>
-                      <div class="profile__subtitle">CEO at PLATFORM</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="testimonials__logos">
-                <a href="#" class="testimonials__logo js-testimonials-thumb" data-index="1">
-                  <img src="../img/platform.svg" alt="/" class="testimonials__logo-in"> </a>
-                <a href="#" class="testimonials__logo js-testimonials-thumb" data-index="2">
-                  <img src="../img/wework.png" alt="/" class="testimonials__logo-in"> </a>
-                <a href="#" class="testimonials__logo js-testimonials-thumb" data-index="3">
-                  <img src="../img/google.png" alt="/" class="testimonials__logo-in"> </a>
               </div>
             </div>
           </div>
           <div class="testimonials__figure">
             <div class="testimonials__figure-in">
-              <div class="testimonials__picture js-testimonials-picture" data-index="1" style="background-image: url(https://placecage.com/1000/1000);"></div>
-              <div class="testimonials__picture js-testimonials-picture" data-index="2" style="background-image: url(https://placecage.com/2000/2000);"></div>
-              <div class="testimonials__picture js-testimonials-picture" data-index="3" style="background-image: url(https://placecage.com/3000/3000);"></div>
+              <div class="testimonials__picture js-testimonials-picture" data-index="1" style="background-image: url(../img/adrian.png);"></div>
+              <div class="testimonials__picture js-testimonials-picture" data-index="2" style="background-image: url(../img/stano-lg.jpg);"></div>
             </div>
           </div>
         </div>
@@ -389,32 +377,26 @@
       <footer class="footer ">
         <div class="footer__inner">
           <div class="footer__top">
-            <h2 class="title-md footer__title">Zaujali sme ťa? Pridaj sa k nám.</h2>
-            <button class="btn footer__btn">
-              <svg class="icon icon-plus btn__plus">
-                <use xlink:href="/img/sprite.svg#icon-plus"></use>
-              </svg>
-              <span class="btn__title">Staň sa členom</span>
-            </button>
-            <div class="footer__label">a vyskúšj si týždeň zadarmo</div>
+            <h2 class="title-md footer__title">Interested? Join&nbsp;us.</h2>
+            <div class="footer__control">
+              <button class="btn footer__btn" data-modal-open="form">
+                <svg class="icon icon-plus btn__plus">
+                  <use xlink:href="../img/sprite.svg#icon-plus"></use>
+                </svg>
+                <span class="btn__title">Become a member</span>
+              </button>
+              <div class="footer__label">Try a free day</div>
+            </div>
           </div>
           <div class="footer__main">
             <div class="footer__contacts">
               <div>
-                <a href="mailto:info@platformhouse.com" class="footer__mail">info@platformhouse.com</a>
-              </div>
-              <div>
-                <a href="tel:" class="footer__phone">+421 (0) 903 333 333</a>
+                <a href="mailto:info@platformhouse.sk" class="footer__mail">info@platformhouse.sk</a>
               </div>
               <div class="footer__social">
-                <a href="#" class="footer__social-item">
+                <a target="_blank" href="https://www.facebook.com/platformhouse/" class="footer__social-item">
                   <svg class="icon icon-fb footer__social-icon footer__social-fb">
-                    <use xlink:href="/img/sprite.svg#icon-fb"></use>
-                  </svg>
-                </a>
-                <a href="#" class="footer__social-item">
-                  <svg class="icon icon-insta footer__social-icon footer__social-insta">
-                    <use xlink:href="/img/sprite.svg#icon-insta"></use>
+                    <use xlink:href="../img/sprite.svg#icon-fb"></use>
                   </svg>
                 </a>
               </div>
@@ -434,7 +416,7 @@
               <div class="footer__copyright">
                 <a href="#" class="logo footer__logo">
                   <svg class="icon icon-logo logo__icon">
-                    <use xlink:href="/img/sprite.svg#icon-logo"></use>
+                    <use xlink:href="../img/sprite.svg#icon-logo"></use>
                   </svg>
                   <div class="logo__content">
                     <div class="logo__line">PLATFORM</div>
@@ -449,34 +431,34 @@
       </footer>
       <!-- end footer -->
       <!-- begin page -->
-      <div class="page">
+      <div class="page" data-modal="form" data-modal-prevent>
         <div class="page__inner">
-          <a href="#" class="page__back js-form-close">
+          <a href="#" class="page__back" data-modal-close="form">
             <svg class="icon icon-arrow-left page__back-icon">
-              <use xlink:href="/img/sprite.svg#icon-arrow-left"></use>
+              <use xlink:href="../img/sprite.svg#icon-arrow-left"></use>
             </svg>
           </a>
           <div class="page__container">
             <form action="/" class="form page__form js-validate">
               <div class="form__header">
-                <div class="title-lg form__title">Kontaktný formulár</div>
-                <div class="form__description">
-                  <p>Ozvi sa nám, pridaj sa k nám alebo si
-                    <strong>vyskúšaj týždeň zadarmo</strong>.</p>
-                </div>
+                <div class="title-lg form__title">Contact form</div>
+              </div>
+              <div class="form__description">
+                <p>Contact us, join us or just
+                  <strong>try a free day</strong>.</p>
               </div>
               <div class="form__body">
                 <div class="form__field-group">
                   <div class="form__field form__field_50">
                     <div class="field js-field js-validate-field">
-                      <div class="field__placeholder">Meno</div>
+                      <div class="field__placeholder">Name</div>
                       <div class="field__control">
                         <input type="text" class="field__input js-field-input js-validate-control" data-validation="required" autocomplete="off"> </div>
                     </div>
                   </div>
                   <div class="form__field form__field_50">
                     <div class="field js-field js-validate-field">
-                      <div class="field__placeholder">Priezvisko</div>
+                      <div class="field__placeholder">Surname</div>
                       <div class="field__control">
                         <input type="text" class="field__input js-field-input js-validate-control" data-validation="required" autocomplete="off"> </div>
                     </div>
@@ -490,9 +472,9 @@
                   </div>
                   <div class="form__field form__field_50">
                     <div class="field js-field js-validate-field">
-                      <div class="field__placeholder">Telefón</div>
+                      <div class="field__placeholder">Phone number</div>
                       <div class="field__control">
-                        <input type="text" class="field__input js-field-input js-validate-control" data-validation="required" autocomplete="off"> </div>
+                        <input type="number" class="field__input js-field-input js-validate-control js-input-phone" data-validation="required" autocomplete="off"> </div>
                     </div>
                   </div>
                 </div>
@@ -502,9 +484,9 @@
                       <div class="field__control">
                         <div class="field__select">
                           <select class="js-field-select" style="width: 100%;">
-                            <option value="Scaleups" data-icon="img/scaleups.svg" data-color="is-red">Scaleups</option>
-                            <option value="Startups" data-icon="img/startups.svg" data-color="is-blue">Startups</option>
-                            <option value="Freelancers" data-icon="img/freelancers.svg" data-color="is-yellow">Freelancers</option>
+                            <option value="Scaleups" data-icon="../img/scaleups.svg" data-color="is-red">Scaleups</option>
+                            <option value="Startups" data-icon="../img/startups.svg" data-color="is-blue">Startups</option>
+                            <option value="Freelancers" data-icon="../img/freelancers.svg" data-color="is-yellow">Freelancers</option>
                           </select>
                         </div>
                       </div>
@@ -512,7 +494,7 @@
                   </div>
                   <div class="form__field">
                     <div class="field js-field js-validate-field">
-                      <div class="field__placeholder">Správa</div>
+                      <div class="field__placeholder">Message</div>
                       <div class="field__control">
                         <textarea class="field__input field__textarea js-field-textarea js-validate-control" data-validation="required" autocomplete="off"></textarea>
                       </div>
@@ -528,22 +510,52 @@
               <div class="form__footer">
                 <button class="btn btn_xl btn_wide form__submit" type="submit">
                   <span class="form__submit-visible">
-                    <span class="btn__title">ODOSLAť</span>
+                    <span class="btn__title">Send</span>
                   </span>
                   <span class="form__submit-hidden">
                     <svg class="icon icon-check btn__check">
-                      <use xlink:href="/img/sprite.svg#icon-check"></use>
+                      <use xlink:href="../img/sprite.svg#icon-check"></use>
                     </svg>
-                    <span class="btn__title">ODOSLAť</span>
+                    <span class="btn__title">Thanks</span>
                   </span>
                 </button>
-                <div class="form__hint">Lorem ipsum dolor sit.</div>
+                <div class="form__hint">Form was successful sent.</div>
               </div>
             </form>
           </div>
         </div>
       </div>
       <!-- end page -->
+      <!-- begin modal -->
+      <div class="modal" data-modal="startups" data-modal-esc>
+        <div class="modal__container" data-modal-prevent>
+          <a href="#" class="modal__close" data-modal-close="startups">
+            <svg class="icon icon-close modal__close-icon">
+              <use xlink:href="../img/sprite.svg#icon-close"></use>
+            </svg>
+          </a>
+          <div class="modal__header">
+            <h2 class="title-md modal__title">Startups</h2>
+            <div class="modal__label">2. floor</div>
+          </div>
+          <img src="../img/floor-startups.svg" alt="Startups" class="modal__img"> </div>
+      </div>
+      <!-- end modal -->
+      <!-- begin modal -->
+      <div class="modal" data-modal="freelancers" data-modal-esc>
+        <div class="modal__container" data-modal-prevent>
+          <a href="#" class="modal__close" data-modal-close="freelancers">
+            <svg class="icon icon-close modal__close-icon">
+              <use xlink:href="../img/sprite.svg#icon-close"></use>
+            </svg>
+          </a>
+          <div class="modal__header">
+            <h2 class="title-md modal__title">Freelancers</h2>
+            <div class="modal__label">1. floor</div>
+          </div>
+          <img src="../img/floor-freelancers.svg" alt="Freelancers" class="modal__img"> </div>
+      </div>
+      <!-- end modal -->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

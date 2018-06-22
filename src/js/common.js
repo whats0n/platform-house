@@ -1,6 +1,6 @@
-import {DOC, BODY, NO_TOUCH} from './constants';
+import {DOC, BODY, NO_TOUCH, touchDetect} from './constants';
 
 DOC.ready(() => {
-  !('ontouchstart' in window) && BODY.addClass(NO_TOUCH);
+  !touchDetect && BODY.addClass(NO_TOUCH);
   require('./components');
 });

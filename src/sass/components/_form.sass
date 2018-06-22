@@ -1,12 +1,12 @@
 .form
 	position: relative
-	padding: 0 120px 80px
+	padding: 96px 120px 80px
 	background: $white
 	box-shadow: 0 8px 16px 0 rgba($black, .05)
 	+lg 
-		padding: 0 90px 80px
+		padding: 96px 90px 80px
 	+sm 
-		padding: 0 25px 60px
+		padding: 68px 25px 60px
 	&.is-valid
 		.form
 			&__submit
@@ -20,26 +20,32 @@
 				&-visible
 					display: none
 			&__hint 
-				opacity: 1
+				opacity: 0.8
 				visibility: visible
+	&__header
+		position: absolute
+		top: -40px
+		left: 0
+		right: 0
+		padding: 0 120px
+		+lg 
+			padding: 0 90px
+		+sm 
+			padding: 0 25px
+		+xs
+			top: -58px
 	&__title
-		float: left
-		margin: -40px 0 60px
-		width: 100%
 		+md
-			margin: -58px 0 50px
 			max-width: 200px
 	&__description
 		clear: both
+		margin-bottom: 47px
 		max-width: 315px
+		opacity: 0.8
 		+xs 
 			padding: 0 10px
-			max-width: 335px
-	&__header
-		margin-bottom: 47px
-		+clr
-		+xs 
 			margin-bottom: 25px
+			max-width: 335px
 	&__footer
 		position: relative
 		+sm 
@@ -83,12 +89,12 @@
 		width: 1.5em
 		height: 1em
 		font-size: 200px
-		// transform: translate3d(100%, -31px, 0)
-		transform: translate3d(100%, 55px, 0)
+		transform: translate3d(100%, -31px, 0)
+		// transform: translate3d(100%, 55px, 0)
 		+lg
 			bottom: 20px
 			font-size: 12vw
-			transform: translate3d(100%, 30%, 0)
+			// transform: translate3d(100%, 30%, 0)
 		+md 
 			display: none
 	&__figure-container,
