@@ -41,5 +41,5 @@ $('.js-validate').each((i, form) => {
     }
   });
 
-  $(form).submit(e => e.preventDefault());
+  // $(form).submit(e => e.preventDefault());
 });
