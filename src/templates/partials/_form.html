@@ -5,7 +5,7 @@
 			{{mixins.icon('arrow-left', 'page__back-icon', rootPath)}}
 		</a>
 		<div class="page__container">
-			<form  action="https://whats0n.us18.list-manage.com/subscribe/post?u=377454ae077fdb06e6d0ca4c5&amp;id=152b8e0133" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form page__form js-validate validate" target="_blank" novalidate>
+			<form  action="/" method="post" class="form page__form js-validate">
 				<div class="form__header">
 					<div class="title-lg form__title">{{form.title | safe}}</div>
 				</div>
@@ -15,10 +15,10 @@
 				<div class="form__body">
 					<div class="form__field-group">
 						{% for item in [
-							{ placeholder: form.name, inputAttrs: 'data-validation="required" name="FIRSTNAME" id="mce-FIRSTNAME"', classList: 'js-validate-field', inputClassList: 'js-validate-control' },
-							{ placeholder: form.surname, inputAttrs: 'data-validation="required" name="SURNAME" id="mce-SURNAME"', classList: 'js-validate-field', inputClassList: 'js-validate-control' },
-							{ placeholder: form.email, inputAttrs: 'data-validation="email" name="EMAIL" id="mce-EMAIL"', classList: 'js-validate-field', inputClassList: 'js-validate-control' },
-							{ placeholder: form.phone, inputAttrs: 'data-validation="required" name="PHONE" id="mce-PHONE"', type: "number", classList: 'js-validate-field', inputClassList: 'js-validate-control js-input-phone' }
+							{ placeholder: form.name, inputAttrs: 'data-validation="required" name="name"', classList: 'js-validate-field', inputClassList: 'js-validate-control' },
+							{ placeholder: form.surname, inputAttrs: 'data-validation="required" name="surname"', classList: 'js-validate-field', inputClassList: 'js-validate-control' },
+							{ placeholder: form.email, inputAttrs: 'data-validation="email" name="email"', classList: 'js-validate-field', inputClassList: 'js-validate-control' },
+							{ placeholder: form.phone, inputAttrs: 'data-validation="required" name="phone"', type: "number", classList: 'js-validate-field', inputClassList: 'js-validate-control js-input-phone' }
 						] %}
 							<div class="form__field form__field_50">
 								{{mixins.field(item)}}
@@ -29,7 +29,7 @@
 						<div class="form__field form__field_50">
 							{{mixins.field({
 								select: {
-									attrs: 'name="FLOORS" id="mce-FLOORS"',
+									attrs: 'name="floors"',
 									options: [
 										{ value: 'Scaleups', icon: rootPath + 'img/scaleups.svg', color: 'red' },
 										{ value: 'Startups', icon: rootPath + 'img/startups.svg', color: 'blue' },
@@ -42,7 +42,7 @@
 							{{mixins.field({
 								placeholder: form.message,
 								textarea: true,
-								inputAttrs: 'data-validation="required" name="MESSAGE" id="mce-MESSAGE"',
+								inputAttrs: 'data-validation="required" name="message"',
 								classList: 'js-validate-field',
 								inputClassList: 'js-validate-control'
 							})}}
@@ -55,12 +55,7 @@
 					</div>
 				</div>
 				<div class="form__footer">
-					<div id="mce-responses" class="clear">
-						<div class="response" id="mce-error-response" style="display:none"></div>
-						<div class="response" id="mce-success-response" style="display:none"></div>
-					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-				    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_377454ae077fdb06e6d0ca4c5_152b8e0133" tabindex="-1" value=""></div>
-					<button class="btn btn_xl btn_wide form__submit" name="subscribe" id="mc-embedded-subscribe" >
+					<button class="btn btn_xl btn_wide form__submit" type="submit">
 						<span class="form__submit-visible">
 							<span class="btn__title">{{form.btn.default}}</span>
 						</span>

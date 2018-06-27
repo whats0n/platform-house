@@ -38,8 +38,15 @@ $('.js-validate').each((i, form) => {
         fields.removeClass(ACTIVE);
         modal.hide('form');
       }, 2000);
+
+      $.ajax({
+        url: 'send.php',
+        type: 'POST',
+        dataType: 'html',
+        data: $form.serialize()
+      });
     }
   });
 
-  // $(form).submit(e => e.preventDefault());
+  $(form).submit(e => e.preventDefault());
 });
