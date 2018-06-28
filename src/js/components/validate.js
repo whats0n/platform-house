@@ -40,7 +40,7 @@ $('.js-validate').each((i, form) => {
       }, 2000);
 
       $.ajax({
-        url: 'send.php',
+        url: `${window.rootPath}send.php`,
         type: 'POST',
         dataType: 'html',
         data: $form.serialize()

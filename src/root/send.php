@@ -1,6 +1,6 @@
 <?php
     /* Email address which will get the message */
-    $to = "mrdvv@mail.ru";
+    $to = "info@platformhouse.sk";
 
     /* subject (message theme) */
     $subject = 'Contact Form from platformhouse';
