@@ -74,8 +74,7 @@
 				"icon": "freelancers",
 				"description": "Staň sa členom do&nbsp;24&nbsp;hodín.",
 				"btn": "Staň sa členom",
-				"btnIcon": "plus",
-				"label": "a vyskúšj si deň zadarmo"
+				"btnIcon": "plus"
 			},
 			{
 				"title": "Startups",

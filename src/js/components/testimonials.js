@@ -46,7 +46,7 @@ $('.js-testimonials').each((i, container) => {
       navClass: [ 'testimonials__arrow testimonials__prev', 'testimonials__arrow testimonials__next' ],
       dots: false,
       autoplay: true,
-      autoplayTimeout: 5000,
+      autoplayTimeout: 8000,
       loop: true,
       autoHeight: true,
       onTranslated: () => update({ slider, thumbs, pictures }),

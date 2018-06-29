@@ -73,8 +73,7 @@
 				"icon": "freelancers",
 				"description": "Become a member in&nbsp;24&nbsp;hours.",
 				"btn": "Become a member",
-				"btnIcon": "plus",
-				"label": "Try a free day"
+				"btnIcon": "plus"
 			},
 			{
 				"title": "Startups",
