@@ -2,8 +2,7 @@
 	"hero": {
 		"title": "Zdieľané priestory pre kreatívcov",
 		"description": "Nech už potrebuješ pracovný stôl alebo malú kanceláriu, môžeš ju mať do 24 hodín.",
-		"btn": "Staň sa členom",
-		"label": "a vyskúšj si deň zadarmo"
+		"btn": "Staň sa členom"
 	},
 	"floors": [
 		{
@@ -20,7 +19,7 @@
 			"icon": "startups",
 			"title": "Startups",
 			"label": "2. poschodie",
-			"description": "Druhé poschodie je určené pre malé a&nbsp;začínajúce spoločnosti, ktoré rozumejú výhodam zdieľaných priestorov a chcú  ich využívať naplno.",
+			"description": "Druhé poschodie je určené pre malé a&nbsp;začínajúce spoločnosti, ktoré rozumejú výhodám zdieľaných priestorov a chcú  ich využívať naplno.",
 			"btn": "Zobraziť pôdorys",
 			"modal": {
 				"target": "startups",
@@ -48,7 +47,7 @@
 	],
 	"benefits": {
 		"title": "PLATFORM House nie sú kancelárie, je to životný štýl",
-		"label": "Benefits",
+		"label": "BENEFITY",
 		"items": [
 			{
 				"img": "img/img-1.jpg",
@@ -68,7 +67,7 @@
 		]
 	},
 	"pricing": {
-		"label": "Pricing",
+		"label": "CENNÍK",
 		"items": [
 			{
 				"title": "Freelancers",
@@ -81,33 +80,33 @@
 			{
 				"title": "Startups",
 				"icon": "startups",
-				"description": "Kontaktuj nás pre viac informácii o prenájme malých kancelárii.",
-				"btnLink": "Send mail",
+				"description": "Kontaktuj nás pre viac informácií o prenájme malých kancelárií.",
+				"btnLink": "Poslať email",
 				"btnIcon": "arrow-right"
 			},
 			{
 				"title": "Scaleups",
 				"icon": "scaleups",
 				"description": "Kontaktuj nás pre&nbsp;viac&nbsp;informácii.",
-				"btnLink": "Hiring",
+				"btnLink": "Hľadáme",
 				"btnIcon": "user"
 			}
 		]
 	},
 	"location": {
 		"title": "Vitaj v PLATFORM House, 5 km od centra",
-		"label": "Location",
-		"link": "View Google maps"
+		"label": "POLOHA",
+		"link": "Zobraziť google maps"
 	},
 	"testimonials": {
-		"label": "Testimonials",
+		"label": "REFERENCIE",
 		"items": [
 			{
 				"logo": "wework.png",
 				"title": "Najväčší benefit PLATFORM HOUSE vidím v spojení zabehnutej digitálnej agentúry PLATFORM so startupmi a freelancermi. Agentúry v PLATFORM HOUSE môžu využiť služby freelancerov, ktorí sa nachádzajú v jednej budove.",
-				"img": "img/adrian.png",
+				"img": "img/adrian-lg.jpg",
 				"profile": {
-					"img": "img/adrian.png",
+					"img": "img/adrian.jpg",
 					"title": "Adrian Řezníček",
 					"subtitle": "FREELANCER"
 				}

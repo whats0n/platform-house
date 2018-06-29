@@ -25,7 +25,7 @@
 					{{mixins.icon('plus', 'btn__plus', rootPath)}}
 					<span class="btn__title">{{hero.btn | safe}}</span>
 				</button>
-				<div class="hero__label">{{hero.label | safe}}</div>
+				{% if hero.label %}<div class="hero__label">{{hero.label | safe}}</div>{% endif %}
 			</div>
 		</div>
 	</div>

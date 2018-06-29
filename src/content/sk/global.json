@@ -9,7 +9,6 @@
 	"footer": {
 		"title": "Zaujali sme ťa? Pridaj sa k nám.",
 		"btn": "Staň sa členom",
-		"label": "a vyskúšj si deň zadarmo",
 		"email": "info@platformhouse.sk",
 		"phone": {
 			"title": "+421 (0) 903 333 333",
@@ -17,15 +16,15 @@
 		},
 		"nav": [
 			{
-				"title": "Benefits",
+				"title": "Benefity",
 				"section": "Benefits"
 			},
 			{
-				"title": "Pricing",
+				"title": "Cenník",
 				"section": "Pricing"
 			},
 			{
-				"title": "Location",
+				"title": "Poloha",
 				"section": "Location"
 			}
 		],

@@ -12,7 +12,7 @@
 			<div class="field__select">
 				<select class="js-field-select" style="width: 100%;" {{props.select.attrs | safe}}>
 					{% for item in props.select.options %}
-						<option value="{{item.value}}" {% if item.icon %}data-icon="{{item.icon}}"{% endif %} {% if item.color %}data-color="is-{{item.color}}"{% endif %}>{{item.value}}</option>
+						<option value="{{item.value}}" {% if item.icon %}data-icon="{{item.icon}}"{% endif %} {% if item.color %}data-color="is-{{item.color}}"{% endif %} {{item.attrs | safe}}>{{item.value}}</option>
 					{% endfor %}
 				</select>
 			</div>

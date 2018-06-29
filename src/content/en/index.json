@@ -2,8 +2,7 @@
 	"hero": {
 		"title": "Shared space for&nbsp;creative minds",
 		"description": "Do you need a desk or a small office? You can have it in 24 hours.",
-		"btn": "Become a member",
-		"label": "Try a free day"
+		"btn": "Become a member"
 	},
 	"floors": [
 		{
@@ -104,9 +103,9 @@
 			{
 				"logo": "wework.png",
 				"title": "The greatest benefit of PLATFORM HOUSE in my eyes is merging of PLATFORM - a renowned digital agency with startups and freelancers. The agencies within PLATFORM HOUSE can involve freelancers working in the same building into their own projects.",
-				"img": "img/adrian.png",
+				"img": "img/adrian-lg.jpg",
 				"profile": {
-					"img": "img/adrian.png",
+					"img": "img/adrian.jpg",
 					"title": "Adrian Řezníček",
 					"subtitle": "FREELANCER"
 				}

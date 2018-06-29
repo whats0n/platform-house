@@ -9,7 +9,7 @@
 						{{mixins.icon('plus', 'btn__plus', rootPath)}}
 						<span class="btn__title">{{footer.btn | safe}}</span>
 					</button>
-					<div class="footer__label">{{footer.label | safe}}</div>
+					{% if footer.label %}<div class="footer__label">{{footer.label | safe}}</div>{% endif %}
 				</div>
 			</div>
 		{% endif %}
@@ -25,9 +25,9 @@
 					<a target="_blank" href="https://www.facebook.com/platformhouse/" class="footer__social-item">
 						{{mixins.icon('fb', 'footer__social-icon footer__social-fb', rootPath)}}
 					</a>
-					{#<a target="_blank" href="#" class="footer__social-item">
+					<a target="_blank" href="https://www.instagram.com/platformhouse/" class="footer__social-item">
 						{{mixins.icon('insta', 'footer__social-icon footer__social-insta', rootPath)}}
-					</a>#}
+					</a>
 				</div>
 			</div>
 			<div class="footer__right">
