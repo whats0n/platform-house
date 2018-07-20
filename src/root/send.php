@@ -15,7 +15,7 @@
 
     /* message */
     $body = '
-        <html>
+        <html lang="en">
         <head>
          <title>' . $subject . '</title>
         </head>
