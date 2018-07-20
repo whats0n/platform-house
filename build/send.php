@@ -31,7 +31,7 @@
 
     /* For sending HTML email you can set up headers Content-type. */
     $headers = "MIME-Version: 1.0\r\n";
-    $headers .= "Content-type: text/html; charset=Windows-1251\r\n";
+    $headers .= "Content-type: text/html; charset=utf-8\r\n";
 
     /* additional header */
     $headers .= "From: platformhouse <" . $email . ">\r\n";

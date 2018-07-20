@@ -40,7 +40,7 @@ if (container.length) {
             touchDetect && map.removeLayer(layer.id);
             return;
           };
-          if (touchDetect && layer.id === 'road-label-large') return;
+          if (layer.id === 'road-label-large') return;
           map.removeLayer(layer.id);
         }
       });
